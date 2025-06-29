@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import notarylogo from '../../assets/logo.png'
+import {useState} from 'react';
 import callIcon from '../../assets/callicon.svg';
 import mailIcon from '../../assets/gmailicon.svg';
 import mapicon from '../../assets/mapicon.svg';
@@ -7,10 +6,9 @@ import nameicon from '../../assets/nameicon.svg';
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
-
 export default function Footer() {
     const [open, setOpen] = useState(false);
-    
+
     return (
     <footer className="bg-[#333446] dark:bg-gray-900">
         <Dialog open={open} onClose={setOpen} className="relative z-10">
@@ -83,27 +81,27 @@ export default function Footer() {
                     <h2 className="mb-6 text-sm font-semibold text-white uppercase">Services</h2>
                     <ul className="text-gray-300 dark:text-gray-400 font-medium space-y-3">
                         <li>
-                        <a href="#" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Criminal Law
                         </a>
                         </li>
                         <li>
-                        <a href="#" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Notarial Services
                         </a>
                         </li>
                         <li>
-                        <a href="#" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Civil Cases
                         </a>
                         </li>
                         <li>
-                        <a href="#" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Family Cases
                         </a>
                         </li>
                         <li>
-                        <a href="#" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             MSME Cases
                         </a>
                         </li>

@@ -61,46 +61,51 @@ const TabsDemo = () => {
   return (
     <div>
       <Navbar />
-      <div className="max-w-6xl mx-auto p-4 space-y-8">
+      <div className="max-w-6xl mx-auto p-2 space-y-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Practice Area</h1>
         
         {/* Legal Services Example */}
         <div className="space-y-4">
           <Tabs defaultTab={0} variant="default">
-            <TabPanel label="Criminal Cases" badge="6">
+            <TabPanel label="Criminal Cases" badge="7">
               <div className="space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Criminal Cases</h3>
                 </div>
                 <div style={{cursor:'pointer'}} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
-                    <div className="flex items-center mb-3">
+                    <div className="flex items-center mb-1">
                       <h4 className="font-semibold text-red-900">FIR & Bail Matters</h4>
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
-                    <div className="flex items-center mb-3">
+                    <div className="flex items-center mb-1">
                       <h4 className="font-semibold text-red-900">Criminal Appeals</h4>
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
-                    <div className="flex items-center mb-3">
+                    <div className="flex items-center mb-1">
                       <h4 className="font-semibold text-red-900">Cheque Bounce Cases</h4>
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
-                    <div className="flex items-center mb-3">
+                    <div className="flex items-center mb-1">
                       <h4 className="font-semibold text-red-900">Cyber Crimes</h4>
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
-                    <div className="flex items-center mb-3">
+                    <div className="flex items-center mb-1">
                       <h4 className="font-semibold text-red-900">Matrimonial cases</h4>
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
-                    <div className="flex items-center mb-3">
+                    <div className="flex items-center mb-1">
                       <h4 className="font-semibold text-red-900">Matrimonial cases</h4>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
+                    <div className="flex items-center mb-1">
+                      <h4 className="font-semibold text-red-900">Any many more</h4>
                     </div>
                   </div>
                 </div>
@@ -166,6 +171,7 @@ const TabsDemo = () => {
                           'Sale Deed Preparation & Review',
                           'Property Registration',
                           'Gift Deed & Will Drafting',
+                          'And many more'
                         ].map((item, index) => (
                           <div key={index} className="flex items-center space-x-3">
                             <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
