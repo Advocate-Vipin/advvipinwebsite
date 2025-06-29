@@ -1,0 +1,99 @@
+import React from 'react';
+import Navbar from '../navbar/navbar';
+import profilephoto from '../../assets/vipin.jpg';
+import Footer from '../features/footer';
+
+export default function ContactUs() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
+      <Navbar />
+      
+      <section className="relative py-2 overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute top-10 left-10 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        
+        <div className="relative container px-6 py-12 mx-auto">
+          <div className="text-center mb-16">
+
+            <h1 className="mt-2 text-4xl md:text-6xl font-bold bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 bg-clip-text text-transparent leading-tight">
+              Contact for Consultation
+            </h1>
+            <p className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 text-lg mb-2 animate-fade-in">
+              Get in touch and consult with us
+            </p>
+          </div>
+
+          <div style={{cursor:'pointer'}} className="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+
+
+            {/* Address Card */}
+            <div style={{cursor:'pointer'}}  className="group relative flex flex-col items-center justify-center text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 overflow-hidden">
+              {/* Gradient background on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <span className="relative p-4 text-white rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 shadow-xl group-hover:scale-110 transition-transform duration-300 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+              </span>
+              
+              <div className="relative">
+                <h2 className="mt-4 text-xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors">
+                  Chamber Address
+                </h2>
+                <p className="mt-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 font-semibold leading-relaxed">
+                  Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, beside Shiv Mandir, Opposite Election Office, Meerut Court, Distt- Meerut, Uttar Pradesh – 250001
+                </p>
+              </div>
+            </div>
+
+            {/* Phone Card */}
+            <div style={{cursor:'pointer'}} className="group relative flex flex-col items-center justify-center text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 overflow-hidden md:col-span-2 lg:col-span-1">
+              {/* Gradient background on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <span className="relative p-4 text-white rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 shadow-xl group-hover:scale-110 transition-transform duration-300 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </span>
+              
+              <div className="relative">
+                <h2 className="mt-4 text-xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors">
+                  Phone
+                </h2>
+                <p className="mt-3 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 font-semibold text-lg">
+                  +91 9568529826
+                </p>
+              </div>
+            </div>
+
+                        {/* Email Card */}
+            <div className="group relative flex flex-col items-center justify-center text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 overflow-hidden">
+              {/* Gradient background on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <span className="relative p-4 text-white rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-xl group-hover:scale-110 transition-transform duration-300 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+              </span>
+
+              <div className="relative">
+                <h2 className="mt-4 text-xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors">
+                  Email Address
+                </h2>
+                <p className="mt-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600 font-semibold text-lg">
+                  vipin.garg64@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
+}

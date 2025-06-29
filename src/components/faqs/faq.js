@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import Navbar from "../navbar/navbar";
+import Footer from "../features/footer";
 
-export default function FAQs () {
+export default function FAQs() {
   return (
-    <div>
-      <Navbar/>
-      <section className="relative z-20 overflow-hidden bg-white pb-12 pt-10 dark:bg-dark lg:pb-[90px] lg:pt-[20px]">
-        <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
+    <div className="overflow-x-hidden">
+      <Navbar />
+      <section className="relative z-20 bg-white pb-12 pt-10 dark:bg-dark lg:pb-[90px] lg:pt-[20px]">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="flex flex-wrap justify-center">
+            <div className="w-full">
               <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
                 <span className="mb-2 block text-lg font-semibold text-primary">
-                  Frequently Asked Questions (FAQs) - Vipin Chand Garg, Notary Public & Advocate
+                  Frequently Asked Questions (FAQs)
                 </span>
                 <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
                   Any Questions? Look Here
@@ -20,111 +21,91 @@ export default function FAQs () {
             </div>
           </div>
 
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full px-4 lg:w-1/2">
-              {/* Advocate Questions (Column 1 - Left) */}
-              {/* Q1: Experience */}
+          <div className="flex flex-wrap -mx-2 lg:-mx-4">
+            <div className="w-full px-2 lg:px-4 lg:w-1/2">
               <AccordionItem
-                header="How many years of experience do you have as an Advocate?"
-                text="I have been practicing as an Advocate since 1999, bringing over 25+ years of extensive legal experience to my clients. This long-standing tenure has provided me with profound insights and practical expertise across diverse areas of Indian law."
+                header="How many years of legal experience is considered substantial?"
+                text="Legal practice experience spanning over 25 years+ (twenty five years plus) is often considered extensive. This duration allows a practitioner to gain deep insights across civil, criminal, and documentation-related matters."
               />
-              {/* Q2: Specific areas of law, with list formatting */}
+
               <AccordionItem
-                header="What specific areas of law does your experience cover, beyond Notary Services?"
+                header="Are rent agreements and wills commonly drafted and notarized?"
+                text="Yes. Rent agreements and wills are among the most frequently prepared documents. They may be both drafted and notarized to ensure compliance with legal requirements."
+              />
+
+              <AccordionItem
+                header="What is the difference between notarization and attestation?"
+                text="Notarization is the official certification by a Notary Public under law, verifying the identity of signatories and the authenticity of documents. Attestation can be broader and may include certification by other authorized entities."
+              />
+
+              <AccordionItem
+                header="What types of documents can be notarized?"
+                text="Documents that may be notarized include affidavits, declarations, undertakings, wills, gift deeds, indemnity bonds, rent agreements, power of attorney, and certified true copies for academic or official use."
+              />
+
+              <AccordionItem
+                header="What types of legal documents are commonly drafted?"
+                text="Legal professionals may draft documents such as General and Special Power of Attorney, Sale Deeds, Partnership Agreements, rent agreements, and legal notices. These documents are prepared to comply with Indian legal standards."
+              />
+
+              <AccordionItem
+                header="What documents are required for notarization?"
+                text="Generally, the original document requiring notarization and a valid government-issued ID are needed. Depending on the document type, additional documents may be required."
+              />
+            </div>
+
+            <div className="w-full px-2 lg:px-4 lg:w-1/2">
+              <AccordionItem
+                header="What is a Notary Public under Indian law?"
+                text="A Notary Public is an individual appointed under the Notaries Act, 1952, authorized to verify, attest, and notarize documents for legal purposes. Appointments are made by the Central or State Government."
+              />
+
+              <AccordionItem
+                header="What areas of law are commonly addressed in legal consultations?"
                 text={
                   <div>
-                    My comprehensive legal experience spans various crucial areas. I specialize in:
-                    <br/><br/>
-                    <ul className="list-disc pl-5">
-                        <li><strong>Criminal Cases:</strong> Offering robust consultation, representation, and assistance with matters like FIRs, Bail (including Anticipatory Bail), and appeals.</li>
-                        <li><strong>Cheque Bounce Cases:</strong> Under Section 138 of the Negotiable Instruments Act, 1881, handling cases from legal notice issuance to court proceedings.</li>
-                        <li><strong>Divorce & Family Law:</strong> Guiding clients through sensitive matters such as mutual consent divorce, contested divorce, alimony, and child custody.</li>
-                        <li><strong>Property Law:</strong> Addressing property disputes, title verification, and offering legal advice on real estate transactions.</li>
-                        <li><strong>Legal Document Drafting:</strong> Expertly crafting various legal documents, including Power of Attorney, Partnership Deeds, and Sale Deeds.</li>
+                    Legal consultations may cover a variety of legal domains. Some commonly addressed areas include:
+                    <br /><br />
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        <strong>Criminal Law:</strong> Matters involving FIRs, bail (including anticipatory bail), and criminal appeals.
+                      </li>
+                      <li>
+                        <strong>Cheque Bounce Cases:</strong> Issues under Section 138 of the Negotiable Instruments Act, 1881.
+                      </li>
+                      <li>
+                        <strong>Divorce & Family Law:</strong> Topics like mutual consent divorce, contested divorce, maintenance, and custody.
+                      </li>
+                      <li>
+                        <strong>Property Law:</strong> Property disputes, title checks, and guidance on immovable property transactions.
+                      </li>
+                      <li>
+                        <strong>Legal Drafting:</strong> Drafting of Power of Attorney, Partnership Deeds, Sale Deeds, and other legal documents.
+                      </li>
                     </ul>
                   </div>
                 }
               />
-              {/* Q3: Legal document drafting */}
-              <AccordionItem
-                header="Besides notarization, what legal documents can you draft?"
-                text="Beyond notarization, my expertise extends to comprehensive legal document drafting. This includes drafting General Power of Attorney, Special Power of Attorney, Partnership Deeds, Sale Deeds, all types of agreements, and legal notices, ensuring they are legally sound and tailored to your specific requirements."
-              />
-              {/* Q4: Rent agreement/Will (leans advocate for drafting) */}
-              <AccordionItem
-                header="Can you help with drafting and notarizing a Rent Agreement or Will?"
-                text="Absolutely. I specialize in drafting and notarizing both Rent Agreements and Wills. I ensure these crucial documents comply with all relevant Indian laws, providing you with peace of mind."
-              />
-              {/* Q5: NRI services (leans legal) */}
-              <AccordionItem
-                header="Do you offer notary and legal services specifically for Non-Resident Indians (NRIs)?"
-                text="Yes, I offer specialized notary and legal services for NRIs. This includes notarizing Powers of Attorney for property transactions, bank operations, and other matters in India, as well as drafting affidavits for OCI applications, passport services, and attesting documents for international use."
-              />
-              {/* Q6: Contact */}
-              <AccordionItem
-                header="How can I contact you to schedule an appointment or inquire about services?"
-                text="You can reach me by phone at +91-9568529826 or by email at vipin.garg64@gmail.com. You can also visit my Advocate Chamber or Residence Notary Address during working hours or by appointment. All contact details and addresses are available on the 'Contact Us' page of this website."
-              />
-            </div>
 
-            <div className="w-full px-4 lg:w-1/2">
-              {/* Notary Questions (Column 2 - Right) */}
-              {/* Important Notary Question at top of right column as requested */}
               <AccordionItem
-                header="What exactly is a Notary Public, and what is your appointment status?"
-                text="I am Vipin Chand Garg, Government of India- appointed Notary Public under the Notaries Act, 1952. I am authorized to practice as a Notary in and throughout Meerut, Uttar Pradesh, appointed by the Government of India. My Certificate of Practice confirms my official standing and commitment to legal authentication."
+                header="Are notarial services applicable to Non-Resident Indians (NRIs)?"
+                text="Yes. Notarial services are often availed by NRIs for documents such as Power of Attorney for property dealings, banking, or legal matters. These may also include affidavits for visa, OCI, and passport-related documentation."
               />
-              {/* Remaining Notary Questions */}
+
               <AccordionItem
-                header="What types of documents can you notarize?"
-                text="I notarize a wide range of documents including affidavits, declarations, undertakings, wills, gift deeds, indemnity bonds, rent agreements, lease agreements, general power of attorney, special power of attorney, affidavits and various affidavit required for examinations, colleges and schools. I also attest true copies of original documents."
+                header="Where are notarial services typically offered?"
+                text="Notarial services may be provided at authorized chambers within court premises and, in some cases, from a designated residence office, subject to approval and official practice jurisdiction."
               />
+
               <AccordionItem
-                header="What documents do I need to bring for notarization?"
-                text="You typically need to bring the original document(s) that require notarization and a valid government-issued photo identification (such as your Aadhaar Card, Passport, or Driving License) for verification of the signatory(ies). It may require additional documents depending on the nature of the document being notarized."
-              />
-              <AccordionItem
-                header="How does notarization differ from attestation?"
-                text="Notarization involves the official sealing and signing by a Notary Public to certify the authenticity of a signature, the truthfulness of a document's content (in the case of an affidavit), or to attest a true copy. Attestation, in a general sense, can also refer to certification by other authorities, but as a Notary Public, my attestation carries official legal weight under the Notaries Act, 1952."
-              />
-              <AccordionItem
-                header="Do you offer notary services at both your chamber and residence?"
-                text="Yes, for your convenience, I provide notary services at both my Advocate Chamber located at Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, Near Shiv Mandir, Meerut Court, Uttar Pradesh, 250001, and at my Residence Notary Address: A23, Saraswati Lok, Delhi Road, Meerut."
+                header="Are notarized documents legally valid?"
+                text="Yes. Documents notarized under the Notaries Act, 1952 carry legal validity and are recognized by courts and government authorities."
               />
             </div>
           </div>
         </div>
-
-        <div className="absolute bottom-0 right-0 z-[-1]">
-          <svg
-            width="1440"
-            height="886"
-            viewBox="0 0 1440 886"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              opacity="0.5"
-              d="M193.307 -273.321L1480.87 1014.24L1121.85 1373.26C1121.85 1373.26 731.745 983.231 478.513 729.927C225.976 477.317 -165.714 85.6993 -165.714 85.6993L193.307 -273.321Z"
-              fill="url(#paint0_linear)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear"
-                x1="1308.65"
-                y1="1142.58"
-                x2="602.827"
-                y2="-418.681"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#3056D3" stop-opacity="0.36" />
-                <stop offset="1" stop-color="#F5F2FD" stop-opacity="0" />
-                <stop offset="1" stop-color="#F5F2FD" stop-opacity="0.096144" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
       </section>
+      <Footer />
     </div>
   );
 }
@@ -135,13 +116,14 @@ const AccordionItem = ({ header, text }) => {
   const handleToggle = () => {
     setActive(!active);
   };
+
   return (
-    <div className="mb-8 w-full rounded-lg bg-white p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
+    <div className="mb-6 lg:mb-8 w-full rounded-lg bg-white p-4 shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:bg-dark-2 dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-6 lg:p-8">
       <button
-        className={`faq-btn flex w-full text-left`}
-        onClick={() => handleToggle()}
+        className="faq-btn flex w-full text-left items-start"
+        onClick={handleToggle}
       >
-        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5">
+        <div className="mr-3 sm:mr-5 flex h-8 w-8 sm:h-10 sm:w-10 max-w-[40px] items-center justify-center rounded-lg bg-primary/5 text-primary dark:bg-white/5 flex-shrink-0">
           <svg
             className={`fill-primary stroke-primary duration-200 ease-in-out ${
               active ? "rotate-180" : ""
@@ -159,21 +141,21 @@ const AccordionItem = ({ header, text }) => {
           </svg>
         </div>
 
-        <div className="w-full">
-          <h4 className="mt-1 text-lg font-semibold text-dark dark:text-white">
+        <div className="w-full min-w-0">
+          <h4 className="text-base sm:text-lg font-semibold text-dark dark:text-white leading-tight">
             {header}
           </h4>
         </div>
       </button>
 
       <div
-        className={`pl-[62px] duration-200 ease-in-out ${
+        className={`pl-11 sm:pl-[62px] duration-200 ease-in-out ${
           active ? "block" : "hidden"
         }`}
       >
-        <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
+        <div className="py-3 text-sm sm:text-base leading-relaxed text-body-color dark:text-dark-6 break-words">
           {text}
-        </p>
+        </div>
       </div>
     </div>
   );

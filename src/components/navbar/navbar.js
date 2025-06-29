@@ -2,13 +2,14 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import brandLogo from '../../assets/logo.png'; // Adjust the path as necessary
 import profilephoto from '../../assets/vipin.jpg';
+import Tooltip from '../features/tooltip';
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
-    { name: 'About Us', href: '/#experience', current: false },
-    { name: 'Services', href: '#', current: false },
+    { name: 'About', href: '/about', current: false },
+    { name: 'Practice Areas', href: '/services', current: false },
     { name: 'FAQs', href: '/faqs', current: false },
-    { name: 'Contact Us', href: '#', current: false },
+    { name: 'Contact', href: '/contactus', current: false },
 ]
 
 function classNames(...classes) {
@@ -66,7 +67,7 @@ export default function Navbar() {
             </button>
 
             {/* Profile dropdown */}
-            <Menu as="div" className="relative ml-3">
+            <Menu as="div" className="relative ml-3 group">
               <div>
                 <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
                   <span className="absolute -inset-1.5" />
@@ -77,11 +78,38 @@ export default function Navbar() {
                     className="size-8 rounded-full"
                   />
                 </MenuButton>
+
+                {/* Tooltip */}
+                <div className="absolute left-1/2 z-50 mt-4 w-max -translate-x-1/2 rounded-md bg-gray-800 px-3 py-2 text-sm text-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p>Advocate</p>
+                  <p className="text-red-600 font-semibold">Notary (Government of India)</p>
+                </div>
               </div>
             </Menu>
+
+
           </div>
         </div>
       </div>
+      <DisclosurePanel className="sm:hidden">
+        <div className="space-y-1 px-2 pt-2 pb-3">
+          {navigation.map((item) => (
+            <DisclosureButton
+              key={item.name}
+              as="a"
+              href={item.href}
+              aria-current={item.current ? 'page' : undefined}
+              className={classNames(
+                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                'block rounded-md px-3 py-2 text-base font-medium',
+              )}
+            >
+              {item.name}
+            </DisclosureButton>
+          ))}
+        </div>
+      </DisclosurePanel>
+                
     </Disclosure>
   )
 }
