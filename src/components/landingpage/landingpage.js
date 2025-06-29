@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import Navbar from "../navbar/navbar";
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import Footer from "../features/footer";
 
 export default function LandingPage() {
     const [open, setOpen] = useState(true);
@@ -74,8 +75,12 @@ export default function LandingPage() {
 
         <Navbar/>
         <div>
-          
+          Hello, welcome to the landing page!
+          <p>This is a sample landing page content.</p>
+          <p>Feel free to explore the features and services we offer.</p> 
         </div>
+
+        <Footer/>
     </div>
   );
 }
