@@ -9,7 +9,7 @@ import About from "../about/about";
 
 export default function MyRoutes(){
     return(
-        <BrowserRouter>
+        <div>
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/faqs" element={<FAQs />} />
@@ -17,6 +17,6 @@ export default function MyRoutes(){
                 <Route path="/services" element={<Services />} />
                 <Route path="/about" element={<About />} />
             </Routes>
-        </BrowserRouter>
+        </div>
     );
 }
