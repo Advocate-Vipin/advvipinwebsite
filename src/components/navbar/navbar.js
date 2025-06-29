@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
-    { name: 'Practice Area', href: '/services', current: false },
+    { name: 'Practice Area', href: '/practicearea', current: false },
     { name: 'FAQs', href: '/faqs', current: false },
     { name: 'Contact', href: '/contactus', current: false },
 ]

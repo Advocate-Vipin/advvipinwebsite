@@ -78,30 +78,30 @@ export default function Footer() {
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3 w-full">
                 {/* Services Section */}
                 <div className="mb-8 xl:mb-0">
-                    <h2 className="mb-6 text-sm font-semibold text-white uppercase">Services</h2>
+                    <h2 className="mb-6 text-sm font-semibold text-white uppercase">Areas of Practice</h2>
                     <ul className="text-gray-300 dark:text-gray-400 font-medium space-y-3">
                         <li>
-                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Criminal Law
                         </a>
                         </li>
                         <li>
-                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Notarial Services
                         </a>
                         </li>
                         <li>
-                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Civil Cases
                         </a>
                         </li>
                         <li>
-                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Family Cases
                         </a>
                         </li>
                         <li>
-                        <a href="/services" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
                             MSME Cases
                         </a>
                         </li>
@@ -131,7 +131,7 @@ export default function Footer() {
                         <div className="flex items-center gap-2">
                         <img src={callIcon} alt="Call Icon" className="w-4 h-4 flex-shrink-0" />
                         <a href="tel:+919568529826" className="text-white hover:text-gray-300 hover:underline transition-colors">
-                            Call Us: +91-9568529826
+                            Mobile: +91-9568529826
                         </a>
                         </div>
 
@@ -139,7 +139,7 @@ export default function Footer() {
                         <div className="flex items-center gap-2">
                         <img src={mailIcon} alt="Email Icon" className="w-4 h-4 flex-shrink-0" />
                         <a href="mailto:vipin.garg64@gmail.com" className="text-white hover:text-gray-300 hover:underline transition-colors">
-                            Mail Us: vipin.garg64@gmail.com
+                            E-Mail: vipin.garg64@gmail.com
                         </a>
                         </div>
                     </div>

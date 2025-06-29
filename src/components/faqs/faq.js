@@ -11,11 +11,11 @@ export default function FAQs() {
           <div className="flex flex-wrap justify-center">
             <div className="w-full">
               <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-                <span className="mb-2 block text-lg font-semibold text-primary">
+                {/* <span className="mb-2 block text-lg font-semibold text-primary">
                   Frequently Asked Questions (FAQs)
-                </span>
-                <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
-                  Any Questions? Look Here
+                </span> */}
+                <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[30px]/[48px]">
+                  Frequently Asked Questions (FAQs)
                 </h2>
               </div>
             </div>
@@ -29,23 +29,23 @@ export default function FAQs() {
               />
 
               <AccordionItem
-                header="Are rent agreements and wills commonly drafted and notarized?"
-                text="Yes. Rent agreements and wills are among the most frequently prepared documents. They may be both drafted and notarized to ensure compliance with legal requirements."
+                header="Are rent agreements commonly drafted and notarized?"
+                text="Yes. Rent agreements are among the most frequently prepared documents. They may be both drafted and notarized to ensure compliance with legal requirements."
               />
 
               <AccordionItem
                 header="What is the difference between notarization and attestation?"
-                text="Notarization is the official certification by a Notary Public under law, verifying the identity of signatories and the authenticity of documents. Attestation can be broader and may include certification by other authorized entities."
+                text="Notarization is the official certification by a Notary Public under law, verifying the identity of signatories and the authenticity of documents. Attestation, on the other hand, is a broader term that may include notarization but can also refer to the verification of documents by other authorities or individuals."
               />
 
               <AccordionItem
                 header="What types of documents can be notarized?"
-                text="Documents that may be notarized include affidavits, declarations, undertakings, wills, gift deeds, indemnity bonds, rent agreements, power of attorney, and certified true copies for academic or official use."
+                text="Documents that may be notarized include affidavits, declarations, undertakings, wills, rent agreements, certified true copies for academic or official use and many more."
               />
 
               <AccordionItem
                 header="What types of legal documents are commonly drafted?"
-                text="Legal professionals may draft documents such as General and Special Power of Attorney, Sale Deeds, Partnership Agreements, rent agreements, and legal notices. These documents are prepared to comply with Indian legal standards."
+                text="Legal professionals may draft documents such as legal notices, Sale Deeds, rent agreements, and many more . These documents are prepared to comply with Indian legal standards."
               />
 
               <AccordionItem

@@ -3,9 +3,14 @@ import Navbar from "../navbar/navbar";
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import Footer from "../features/footer";
-
+import { useNavigate } from "react-router-dom";
 export default function LandingPage() {
-    const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(true);
+  const navigate = useNavigate();
+  
+  const LearnMore = () => {
+    navigate("/practicearea");
+  }
 
   return (
     <div>
@@ -74,13 +79,40 @@ export default function LandingPage() {
         </Dialog>
 
         <Navbar/>
-        <div>
-          Hello, welcome to the landing page!
-          <p>This is a sample landing page content.</p>
-          <p>Feel free to explore the features and services we offer.</p> 
-        </div>
+        <section style={{ marginLeft: '10%', marginRight: '10%' }} className="overflow-hidden pt-20 pb-1 lg:pt-[50px] lg:pb-[90px] bg-white dark:bg-dark">
+          <h1 className="text-xl font-bold text-dark dark:text-white">
+            Vipin Chand Garg
+          </h1>
+          <p className="text-base text-body-color dark:text-dark-6">
+            Advocate & Notary (Government of India)
+          </p>
+
+          <br />
+          <br />
+          <p className="mb-5 text-base text-body-color dark:text-dark-6">
+            Vipin Chand Garg is an Advocate enrolled with the Bar Council and has been engaged in the practice of law for over 25 years. His professional work includes matters related to criminal law, legal documentation and drafting, and other areas of legal practice, carried out in accordance with applicable Indian legal provisions.
+            <br /><br />
+            In addition to legal practice, Vipin Chand Garg is a Notary appointed by the Central Government under the Notaries Act, 1952. His notarial functions are performed in accordance with statutory provisions, including attestation, verification of documents, rent agreements and many more. He has also authored legal publications intended for academic and professional reference, covering various aspects of Indian law.
+            <br /><br />
+            He practices law in Meerut, Uttar Pradesh. Chamber is located at: <br />
+            <span className="font-medium">
+              Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, Beside Shiv Mandir, Opposite Election Office, Meerut Court, Uttar Pradesh, 250001.
+            </span>
+            <br /><br />
+            This website is intended to provide general professional information as permitted under the Bar Council of India Rules. It does not serve as a platform for solicitation or advertisement.
+          </p>
+
+          <a
+            style={{ cursor: "pointer" }}
+            onClick={LearnMore}
+            className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-blue-400 hover:bg-opacity-90"
+          >
+            Learn More
+          </a>
+        </section>
 
         <Footer/>
+
     </div>
   );
 }

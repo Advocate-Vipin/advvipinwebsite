@@ -62,7 +62,7 @@ const Services = () => {
     <div>
       <Navbar />
       <div className="max-w-7xl mx-auto p-2 sm:p-4 md:p-6 space-y-6 sm:space-y-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 md:mb-8 text-center sm:text-left">Practice Area</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 md:mb-8 text-center sm:text-left">Areas of Practice </h1>
         
         {/* Legal Services Example */}
         <div className="space-y-4">
@@ -91,11 +91,6 @@ const Services = () => {
                   <div className="bg-gradient-to-br from-red-50 to-red-100 p-4 sm:p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
                     <div className="flex items-center mb-1">
                       <h4 className="font-semibold text-red-900 text-sm sm:text-base">Cyber Crimes</h4>
-                    </div>
-                  </div>
-                  <div className="bg-gradient-to-br from-red-50 to-red-100 p-4 sm:p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
-                    <div className="flex items-center mb-1">
-                      <h4 className="font-semibold text-red-900 text-sm sm:text-base">Matrimonial cases</h4>
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-red-50 to-red-100 p-4 sm:p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
@@ -271,33 +266,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                
-                <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 sm:p-6 rounded-xl border border-orange-200">
-                  <div className="flex items-start space-x-3 sm:space-x-4">
-                    <span className="text-2xl sm:text-3xl">💡</span>
-                    <div className="min-w-0 flex-1">
-                      <h4 className="font-semibold text-orange-900 text-base sm:text-lg mb-2">Key Benefits for MSMEs (Only for Self- Knowledge purpose)</h4>
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4">
-                        <div className="space-y-2">
-                          <p className="text-orange-800 text-xs sm:text-sm font-medium">Legal Protection:</p>
-                          <ul className="text-orange-700 text-xs sm:text-sm space-y-1">
-                            <li>• Payment security under MSMED Act</li>
-                            <li>• Priority in government tenders</li>
-                            <li>• Protection against delayed payments</li>
-                          </ul>
-                        </div>
-                        <div className="space-y-2">
-                          <p className="text-orange-800 text-xs sm:text-sm font-medium">Financial Benefits:</p>
-                          <ul className="text-orange-700 text-xs sm:text-sm space-y-1">
-                            <li>• Collateral-free loans</li>
-                            <li>• Subsidy schemes access</li>
-                            <li>• Tax benefits & exemptions</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </TabPanel>
           </Tabs>
