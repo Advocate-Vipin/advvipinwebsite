@@ -3,6 +3,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import brandLogo from '../../assets/logo.png'; // Adjust the path as necessary
 import profilephoto from '../../assets/vipin.jpg';
 import Tooltip from '../features/tooltip';
+import { useNavigate } from 'react-router-dom';
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
@@ -11,11 +12,20 @@ const navigation = [
     { name: 'Contact', href: '/contactus', current: false },
 ]
 
+
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
+
+  const navigate = useNavigate();
+
+  const navigationClicks = (href) => () => {
+    navigate(href);
+  };
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -40,17 +50,17 @@ export default function Navbar() {
             <div className="hidden sm:ml-6 m-2 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
-                  <a
+                  <p
                     key={item.name}
-                    href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
+                    onClick={navigationClicks(item.href)}
+                    style={{ cursor: 'pointer' }}
                     className={classNames(
                       item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                       'rounded-md px-3 py-2 text-sm font-medium',
                     )}
                   >
                     {item.name}
-                  </a>
+                  </p>
                 ))}
               </div>
             </div>
