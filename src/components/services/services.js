@@ -57,7 +57,7 @@ const TabPanel = ({ children, label, badge }) => {
 };
 
 // Demo Component showing usage
-const TabsDemo = () => {
+const Services = () => {
   return (
     <div>
       <Navbar />
@@ -308,5 +308,5 @@ const TabsDemo = () => {
   );
 };
 
-export default TabsDemo;
+export default Services;
 export { Tabs, TabPanel };
