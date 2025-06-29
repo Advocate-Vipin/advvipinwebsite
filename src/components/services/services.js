@@ -67,12 +67,12 @@ const TabsDemo = () => {
         {/* Legal Services Example */}
         <div className="space-y-4">
           <Tabs defaultTab={0} variant="default">
-            <TabPanel label="Criminal Cases" badge="5">
+            <TabPanel label="Criminal Cases" badge="6">
               <div className="space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Criminal Cases</h3>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div style={{cursor:'pointer'}} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border border-red-200 hover:shadow-lg transition-shadow">
                     <div className="flex items-center mb-3">
                       <h4 className="font-semibold text-red-900">FIR & Bail Matters</h4>
@@ -107,13 +107,13 @@ const TabsDemo = () => {
               </div>
             </TabPanel>
             
-            <TabPanel label="Notarial Services" badge="12">
+            <TabPanel label="Notarial Services" badge="7">
               <div className="space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Notarial Services</h3>
                   <p className="text-gray-600">Notarization is the official certification by a Notary- Government of India under the Notaries Act, 1952, verifying the identity of signatories and the authenticity of documents. Attestation can be broader and may be include</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div style={{cursor:'pointer'}} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {[
                     { name: 'Affidavits', icon: '📋' },
                     { name: 'Rent Agreements', icon: '🏠' },
@@ -147,22 +147,19 @@ const TabsDemo = () => {
               </div>
             </TabPanel>
             
-            <TabPanel label="Civil Cases" badge="7">
+            <TabPanel label="Civil Cases" badge="1">
               <div className="space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Civil Cases</h3>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border border-blue-200">
+                <div style={{cursor:'pointer'}} className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border border-blue-200">
                   <div >
                     <div className="space-y-4">
                       <div className="flex items-center space-x-3 mb-4">
                         <span className="text-3xl">🏢</span>
                         <h4 className="text-xl font-semibold text-blue-900">Property Cases</h4>
                       </div>
-                      <p className="text-blue-700 text-sm mb-4 leading-relaxed">
-                        Comprehensive legal support for property-related disputes including title disputes, boundary issues, and possession matters.
-                      </p>
-                      <div className="space-y-3">
+                      <div style={{cursor:'pointer'}} className="space-y-3">
                         {[
                           'Legal Opinion & Advisory',
                           'Title Verification & Clearance',
@@ -182,12 +179,12 @@ const TabsDemo = () => {
               </div>
             </TabPanel>
             
-            <TabPanel label="Family Cases" badge="8">
+            <TabPanel label="Family Cases" badge="2">
               <div className="space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Family Law</h3>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div style={{cursor:'pointer'}} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border border-green-200 hover:shadow-lg transition-shadow">
                     <div className="text-center mb-4">
                       <h4 className="font-semibold text-green-900 text-lg">Registration</h4>
@@ -220,21 +217,18 @@ const TabsDemo = () => {
               </div>
             </TabPanel>
             
-            <TabPanel label="MSME Cases" badge="6">
+            <TabPanel label="MSME Cases" badge="2">
               <div className="space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">MSME</h3>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div style={{cursor:'pointer'}} className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl border border-indigo-200">
                     <div className="flex items-center space-x-3 mb-4">
                       <span className="text-3xl">🏭</span>
                       <h4 className="text-xl font-semibold text-indigo-900">MSME Registration</h4>
                     </div>
                     <div className="space-y-4">
-                      <p className="text-indigo-700 text-sm leading-relaxed mb-4">
-                        Complete assistance with MSME registration, compliance, and legal documentation.
-                      </p>
                       <div className="space-y-3">
                         {[
                           'MSME Registration Process',
@@ -258,9 +252,6 @@ const TabsDemo = () => {
                       <h4 className="text-xl font-semibold text-indigo-900">MSME Dispute Resolution</h4>
                     </div>
                     <div className="space-y-4">
-                      <p className="text-indigo-700 text-sm leading-relaxed mb-4">
-                        Expert representation in MSME-related disputes and recovery matters.
-                      </p>
                       <div className="space-y-3">
                         {[
                           'Payment Delay Disputes',

@@ -17,11 +17,11 @@ export default function ContactUs() {
           <div className="text-center mb-16">
 
             <h1 className="mt-2 text-4xl md:text-6xl font-bold bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 bg-clip-text text-transparent leading-tight">
-              Contact for Consultation
+              Contact
             </h1>
-            <p className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 text-lg mb-2 animate-fade-in">
+            {/* <p className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 text-lg mb-2 animate-fade-in">
               Get in touch and consult with us
-            </p>
+            </p> */}
           </div>
 
           <div style={{cursor:'pointer'}} className="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
@@ -62,7 +62,7 @@ export default function ContactUs() {
               
               <div className="relative">
                 <h2 className="mt-4 text-xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors">
-                  Phone
+                  Phone Number
                 </h2>
                 <p className="mt-3 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 font-semibold text-lg">
                   +91 9568529826

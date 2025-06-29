@@ -6,8 +6,7 @@ import Tooltip from '../features/tooltip';
 
 const navigation = [
     { name: 'Home', href: '/', current: true },
-    { name: 'About', href: '/about', current: false },
-    { name: 'Practice Areas', href: '/services', current: false },
+    { name: 'Practice Area', href: '/services', current: false },
     { name: 'FAQs', href: '/faqs', current: false },
     { name: 'Contact', href: '/contactus', current: false },
 ]
