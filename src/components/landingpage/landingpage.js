@@ -115,6 +115,16 @@ export default function LandingPage() {
                       Chamber Location & Directions
                     </DialogTitle>
                     
+                    {/* Advocate Name and Title */}
+                    <div className="mb-3 p-3 bg-blue-50 rounded-lg border border-blue-200 cursor-pointer">
+                      <h4 className="text-base sm:text-lg lg:text-xl font-bold text-black-900 mb-1">
+                        Vipin Chand Garg
+                      </h4>
+                      <p className="text-sm sm:text-base text-red-700 font-medium">
+                        Advocate & Notary (Govt. Of India)
+                      </p>
+                    </div>
+                    
                     {/* Address Information */}
                     <div className="mb-4 p-3 bg-gray-50 rounded-lg border-l-4 border-blue-400">
                       <p className="text-sm sm:text-base font-medium text-gray-900 mb-1">
