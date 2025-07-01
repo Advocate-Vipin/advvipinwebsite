@@ -1,13 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Navbar from '../navbar/navbar';
 import profilephoto from '../../assets/vipin.jpg';
 import Footer from '../features/footer';
+import ChamberLocation from '../features/chamberLocation';
 
 export default function ContactUs() {
+  const [mapOpen, setMapOpen] = useState(false);
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
       <Navbar />
-      
+      <ChamberLocation mapOpen={mapOpen} setMapOpen={setMapOpen} />
       <section className="relative py-2 overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute top-10 left-10 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
@@ -28,7 +31,7 @@ export default function ContactUs() {
 
 
             {/* Address Card */}
-            <div style={{cursor:'pointer'}}  className="group relative flex flex-col items-center justify-center text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 overflow-hidden">
+            <div onClick={()=> setMapOpen(true)}  style={{cursor:'pointer'}}  className="group relative flex flex-col items-center justify-center text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 overflow-hidden">
               {/* Gradient background on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
