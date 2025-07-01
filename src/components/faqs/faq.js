@@ -14,7 +14,7 @@ export default function FAQs() {
                 {/* <span className="mb-2 block text-lg font-semibold text-primary">
                   Frequently Asked Questions (FAQs)
                 </span> */}
-                <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[30px]/[48px]">
+                <h2 className="mb-4 text-3xl font-bold text-dark dark:text-black sm:text-[30px]/[48px]">
                   Frequently Asked Questions (FAQs)
                 </h2>
               </div>
@@ -142,7 +142,7 @@ const AccordionItem = ({ header, text }) => {
         </div>
 
         <div className="w-full min-w-0">
-          <h4 className="text-base sm:text-lg font-semibold text-dark dark:text-white leading-tight">
+          <h4 className="text-base sm:text-lg font-semibold text-dark dark:text-black leading-tight">
             {header}
           </h4>
         </div>
