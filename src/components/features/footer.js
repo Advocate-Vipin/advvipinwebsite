@@ -177,7 +177,7 @@ export default function Footer() {
                 {/* Copyright */}
                 <div className="text-center">
                     <span className="text-sm text-gray-400 break-words">
-                        © 2025 Advocate Vipin Chand Garg. All Rights Reserved.
+                        © Copyright 2025, Advocate Vipin Chand Garg. All Rights Reserved.
                     </span>
                 </div>
             </div>
