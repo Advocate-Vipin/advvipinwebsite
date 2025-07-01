@@ -99,30 +99,30 @@ export default function LandingPage() {
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
                 Vipin Chand Garg
               </h1>
-              <p className="text-base sm:text-lg text-gray-600">
+              <p className="text-base sm:text-lg text-red-600">
                 Advocate & Notary (Government of India)
               </p>
             </div>
 
             {/* Main Content */}
             <div className="prose prose-gray max-w-none">
-              <div className="text-sm sm:text-base text-gray-700 leading-relaxed space-y-4 sm:space-y-6 mb-8">
+              <div className="text-sm sm:text-base text-black-700 leading-relaxed space-y-4 sm:space-y-6 mb-8">
                 <p>
-                  Vipin Chand Garg is an Advocate enrolled with the Bar Council and has been engaged in the practice of law for over 25 years. His professional work includes matters related to criminal law, legal documentation and drafting, and other areas of legal practice, carried out in accordance with applicable Indian legal provisions.
+                  <strong className="cursor-pointer" >Vipin Chand Garg</strong> is an Advocate enrolled with the Bar Council and has been engaged in the practice of law for over 25 years. His professional work includes matters related to criminal law, legal documentation and drafting, and other areas of legal practice, carried out in accordance with applicable Indian legal provisions.
                 </p>
                 
                 <p>
-                  In addition to legal practice, Vipin Chand Garg is a Notary appointed by the Central Government under the Notaries Act, 1952. His notarial functions are performed in accordance with statutory provisions, including attestation, verification of documents, rent agreements and many more. He has also authored legal publications intended for academic and professional reference, covering various aspects of Indian law.
+                  In addition to legal practice, <strong className="cursor-pointer">Vipin Chand Garg</strong> is a Notary appointed by the Central Government of India under the Notaries Act, 1952. His Notarial functions are performed in accordance with statutory provisions, including attestation, verification of documents, rent agreements and many more. He has also authored legal publications intended for academic and professional reference, covering various aspects of Indian law.
                 </p>
                 
                 <div>
                   <p className="mb-2">
-                    He practices law in Meerut, Uttar Pradesh. Chamber is located at:
+                    He practices law in <strong className="cursor-pointer"> Meerut, Uttar Pradesh</strong>. Chamber is located at:
                   </p>
-                  <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border-l-4 border-blue-400">
-                    <p className="font-medium text-gray-900 text-sm sm:text-base">
-                      Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, Beside Shiv Mandir, Opposite Election Office, Meerut Court, Uttar Pradesh, 250001.
-                    </p>
+                  <div className="bg-gray-50 p-3 sm:p-4 rounded-lg border-l-4 border-blue-400 cursor-pointer hover:bg-gray-100 transition-colors">
+                    <strong className="font-medium text-gray-900 text-sm sm:text-base">
+                      Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, Beside Shiv Mandir, Opposite Election Office, Meerut Court, Uttar Pradesh— 250001, India.
+                    </strong>
                   </div>
                 </div>
                 
