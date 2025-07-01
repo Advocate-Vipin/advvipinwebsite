@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import Navbar from '../navbar/navbar';
-import profilephoto from '../../assets/vipin.jpg';
 import Footer from '../features/footer';
 import ChamberLocation from '../features/chamberLocation';
 
@@ -27,7 +26,7 @@ export default function ContactUs() {
             </p> */}
           </div>
 
-          <div style={{cursor:'pointer'}} className="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+          <div style={{cursor:'pointer'}} className="grid grid-cols-1 gap-8 mt-16 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
 
 
             {/* Address Card */}
@@ -53,7 +52,7 @@ export default function ContactUs() {
             </div>
 
             {/* Phone Card */}
-            <div style={{cursor:'pointer'}} className="group relative flex flex-col items-center justify-center text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 overflow-hidden md:col-span-2 lg:col-span-1">
+            <div style={{cursor:'pointer'}} className="group relative flex flex-col items-center justify-center text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 overflow-hidden">
               {/* Gradient background on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
@@ -73,7 +72,7 @@ export default function ContactUs() {
               </a>
             </div>
 
-                        {/* Email Card */}
+            {/* Email Card */}
             <div className="group relative flex flex-col items-center justify-center text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 overflow-hidden">
               {/* Gradient background on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -92,6 +91,32 @@ export default function ContactUs() {
                   vipin.garg64@gmail.com
                 </p>
               </div>
+            </div>
+
+            {/* Direction Card */}
+            <div onClick={()=> setMapOpen(true)} className="group relative flex flex-col items-center justify-center text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 overflow-hidden">
+              {/* Gradient background on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <span className="relative p-4 text-white rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 shadow-xl group-hover:scale-110 transition-transform duration-300 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.158.69-.158 1.006 0l4.994 2.497c.317.158.69.158 1.007 0z" />
+                </svg>
+              </span>
+
+              <a 
+                
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative"
+              >
+                <h2 className="mt-4 text-xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors">
+                  Get Directions
+                </h2>
+                <p className="mt-3 text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 font-semibold text-lg">
+                  Navigate to Chamber
+                </p>
+              </a>
             </div>
           </div>
         </div>
