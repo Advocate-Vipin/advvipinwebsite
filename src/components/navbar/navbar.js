@@ -24,7 +24,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden overflow-y-hidden">
       <Disclosure as="nav" className="bg-gray-800">
         <div className="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
