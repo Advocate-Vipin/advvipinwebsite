@@ -63,14 +63,14 @@ export default function ContactUs() {
                 </svg>
               </span>
               
-              <div className="relative">
+              <a href="tel:+919568529826" className="relative">
                 <h2 className="mt-4 text-xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors">
                   Phone Number
                 </h2>
                 <p className="mt-3 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 font-semibold text-lg">
                   +91 9568529826
                 </p>
-              </div>
+              </a>
             </div>
 
                         {/* Email Card */}
