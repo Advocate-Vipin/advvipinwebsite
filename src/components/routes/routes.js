@@ -12,7 +12,7 @@ export default function MyRoutes(){
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/faqs" element={<FAQs />} />
-                <Route path="/contactus" element={<ContactUs />} />
+                <Route path="/contactdetails" element={<ContactUs />} />
                 <Route path="/practicearea" element={<Services />} />
             </Routes>
         </div>

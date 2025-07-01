@@ -17,6 +17,10 @@ export default function LandingPage() {
     navigate("/practicearea");
   }
 
+  const contactdetails = () => {
+    navigate("/contactdetails");
+  }
+
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden">
   
@@ -234,10 +238,10 @@ export default function LandingPage() {
           <div className="max-w-4xl">
             {/* Header */}
             <div className="mb-8 sm:mb-12">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
+              <h1 onClick={contactdetails} className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 cursor-pointer">
                 Vipin Chand Garg
               </h1>
-              <p className="text-base sm:text-lg text-red-600">
+              <p onClick={contactdetails} className="text-base sm:text-lg text-red-600 cursor-pointer">
                 Advocate & Notary (Government of India)
               </p>
             </div>
@@ -246,11 +250,11 @@ export default function LandingPage() {
             <div className="prose prose-gray max-w-none">
               <div className="text-sm sm:text-base text-black-700 leading-relaxed space-y-4 sm:space-y-6 mb-8">
                 <p>
-                  <strong className="cursor-pointer" onClick={()=> setMapOpen(true)}>Vipin Chand Garg</strong> is an Advocate enrolled with the Bar Council and has been engaged in the practice of law for over 25 years. His professional work includes matters related to criminal law, legal documentation and drafting, and other areas of legal practice, carried out in accordance with applicable Indian legal provisions.
+                  <strong className="cursor-pointer" onClick={contactdetails}>Vipin Chand Garg</strong> is an Advocate enrolled with the Bar Council and has been engaged in the practice of law for over 25 years. His professional work includes matters related to criminal law, legal documentation and drafting, and other areas of legal practice, carried out in accordance with applicable Indian legal provisions.
                 </p>
                 
                 <p>
-                  In addition to legal practice, <strong onClick={()=> setMapOpen(true)} className="cursor-pointer">Vipin Chand Garg</strong> is a Notary appointed by the Central Government of India under the Notaries Act, 1952. His Notarial functions are performed in accordance with statutory provisions, including attestation, verification of documents, rent agreements and many more. He has also authored legal publications intended for academic and professional reference, covering various aspects of Indian law.
+                  In addition to legal practice, <strong onClick={contactdetails} className="cursor-pointer">Vipin Chand Garg</strong> is a Notary appointed by the Central Government of India under the Notaries Act, 1952. His Notarial functions are performed in accordance with statutory provisions, including attestation, verification of documents, rent agreements and many more. He has also authored legal publications intended for academic and professional reference, covering various aspects of Indian law.
                 </p>
                 
                 <div>
