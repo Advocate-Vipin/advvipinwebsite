@@ -5,10 +5,16 @@ import mapicon from '../../assets/mapicon.svg';
 import nameicon from '../../assets/nameicon.svg';
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
     const [open, setOpen] = useState(false);
+    const navigate = useNavigate();
 
+    const handleNavigation=() => {
+        navigate('/practicearea');
+    }
+    
     return (
     <div className="w-full overflow-x-hidden">
         <Dialog open={open} onClose={setOpen} className="relative z-50">
@@ -87,30 +93,30 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Services Section */}
                     <div className="space-y-4">
-                        <h2 className="text-sm font-semibold text-white uppercase tracking-wide">Areas of Practice</h2>
+                        <h2 className="text-sm font-semibold text-white uppercase tracking-wide">Area of Practice</h2>
                         <ul className="space-y-3">
                             <li>
-                            <a href="practicearea" className="text-gray-300 hover:text-white hover:underline transition-colors text-sm">
+                            <a onClick={handleNavigation} className="text-gray-300 hover:text-white hover:underline transition-colors text-sm cursor-pointer">
                                 Criminal Law
                             </a>
                             </li>
                             <li>
-                            <a href="practicearea" className="text-gray-300 hover:text-white hover:underline transition-colors text-sm">
+                            <a onClick={handleNavigation} className="text-gray-300 hover:text-white hover:underline transition-colors text-sm cursor-pointer">
                                 Notarial Services
                             </a>
                             </li>
                             <li>
-                            <a href="practicearea" className="text-gray-300 hover:text-white hover:underline transition-colors text-sm">
+                            <a onClick={handleNavigation} className="text-gray-300 hover:text-white hover:underline transition-colors text-sm cursor-pointer">
                                 Civil Cases
                             </a>
                             </li>
                             <li>
-                            <a href="practicearea" className="text-gray-300 hover:text-white hover:underline transition-colors text-sm">
+                            <a onClick={handleNavigation} className="text-gray-300 hover:text-white hover:underline transition-colors text-sm cursor-pointer">
                                 Family Cases
                             </a>
                             </li>
                             <li>
-                            <a href="practicearea" className="text-gray-300 hover:text-white hover:underline transition-colors text-sm">
+                            <a onClick={handleNavigation} className="text-gray-300 hover:text-white hover:underline transition-colors text-sm cursor-pointer">
                                 MSME Cases
                             </a>
                             </li>
@@ -141,7 +147,7 @@ export default function Footer() {
                             {/* Phone */}
                             <div className="flex items-center gap-3">
                                 <img src={callIcon} alt="Call Icon" className="w-4 h-4 flex-shrink-0" />
-                                <a href="tel:+919568529826" className="text-gray-300 hover:text-white hover:underline transition-colors text-sm break-all">
+                                <a href="tel:+919568529826" className="text-gray-300 hover:text-white hover:underline transition-colors text-sm cursor-pointer break-all">
                                     Mobile: +91-9568529826
                                 </a>
                             </div>
@@ -149,7 +155,7 @@ export default function Footer() {
                             {/* Email */}
                             <div className="flex items-center gap-3">
                                 <img src={mailIcon} alt="Email Icon" className="w-4 h-4 flex-shrink-0" />
-                                <a href="mailto:vipin.garg64@gmail.com" className="text-gray-300 hover:text-white hover:underline transition-colors text-sm break-all">
+                                <a href="mailto:vipin.garg64@gmail.com" className="text-gray-300 hover:text-white hover:underline transition-colors text-sm cursor-pointer break-all">
                                     E-Mail: vipin.garg64@gmail.com
                                 </a>
                             </div>
@@ -163,7 +169,7 @@ export default function Footer() {
                             <li>
                                 <button 
                                     onClick={() => setOpen(true)} 
-                                    className="text-gray-300 hover:text-white hover:underline transition-colors text-sm text-left"
+                                    className="text-gray-300 hover:text-white hover:underline transition-colors text-sm cursor-pointer text-left"
                                 >
                                     Disclaimer
                                 </button>
