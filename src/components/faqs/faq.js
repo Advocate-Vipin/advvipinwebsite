@@ -25,7 +25,7 @@ export default function FAQs() {
             <div className="w-full px-2 lg:px-4 lg:w-1/2">
               <AccordionItem
                 header="How many years of legal experience is considered substantial?"
-                text="Legal practice experience spanning over 25 years+ (twenty five years plus) is often considered extensive. This duration allows a practitioner to gain deep insights across civil, criminal, and documentation-related matters."
+                text="Legal practice experience spanning over 20 years (twenty years plus) is often considered extensive. This duration allows a practitioner to gain deep insights across civil, criminal, and documentation-related matters."
               />
 
               <AccordionItem

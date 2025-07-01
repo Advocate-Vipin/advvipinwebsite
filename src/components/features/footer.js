@@ -5,9 +5,16 @@ import mapicon from '../../assets/mapicon.svg';
 import nameicon from '../../assets/nameicon.svg';
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
     const [open, setOpen] = useState(false);
+
+    const navigate = useNavigate();
+
+    const handleAreaofPracticeClick = () => {
+        navigate('/practicearea');
+    }
 
     return (
     <footer className="bg-[#333446] dark:bg-gray-900">
@@ -81,27 +88,27 @@ export default function Footer() {
                     <h2 className="mb-6 text-sm font-semibold text-white uppercase">Areas of Practice</h2>
                     <ul className="text-gray-300 dark:text-gray-400 font-medium space-y-3">
                         <li>
-                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a onClick={handleAreaofPracticeClick} style={{cursor: 'pointer'}}  className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Criminal Law
                         </a>
                         </li>
                         <li>
-                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a onClick={handleAreaofPracticeClick} style={{cursor: 'pointer'}}  className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Notarial Services
                         </a>
                         </li>
                         <li>
-                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a onClick={handleAreaofPracticeClick} style={{cursor: 'pointer'}}  className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Civil Cases
                         </a>
                         </li>
                         <li>
-                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a onClick={handleAreaofPracticeClick} style={{cursor: 'pointer'}}  className="text-white hover:text-gray-300 hover:underline transition-colors">
                             Family Cases
                         </a>
                         </li>
                         <li>
-                        <a href="practicearea" className="text-white hover:text-gray-300 hover:underline transition-colors">
+                        <a onClick={handleAreaofPracticeClick} style={{cursor: 'pointer'}}  className="text-white hover:text-gray-300 hover:underline transition-colors">
                             MSME Cases
                         </a>
                         </li>
