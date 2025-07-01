@@ -1,5 +1,5 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, BellIcon, XMarkIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import brandLogo from '../../assets/logo.png'; // Adjust the path as necessary
 import profilephoto from '../../assets/vipin.jpg';
 import Tooltip from '../features/tooltip';
@@ -63,6 +63,17 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
+
+            {/* Mobile Number Section */}
+            <div className="hidden md:flex items-center text-gray-300 mr-4">
+              <PhoneIcon className="h-4 w-4 mr-2" />
+              <a 
+                href="tel:9568529826" 
+                className="text-sm font-medium hover:text-white transition-colors whitespace-nowrap"
+              >
+                +91 9568529826
+              </a>
+            </div>
             
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
@@ -113,6 +124,16 @@ export default function Navbar() {
                 {item.name}
               </DisclosureButton>
             ))}
+            {/* Mobile Number for mobile view */}
+            <div className="flex items-center px-3 py-2 text-gray-300">
+              <PhoneIcon className="h-4 w-4 mr-2" />
+              <a 
+                href="tel:9568529826" 
+                className="text-base font-medium hover:text-white transition-colors"
+              >
+                +91 9568529826
+              </a>
+            </div>
           </div>
         </DisclosurePanel>
       </Disclosure>
