@@ -14,7 +14,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col overflow-x-hidden">
       {/* Disclaimer Modal */}
       <Dialog open={open} onClose={setOpen} className="relative z-50">
         <DialogBackdrop
