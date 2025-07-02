@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from '../features/footer';
 import Navbar from '../navbar/navbar';
-
+import { Helmet } from "react-helmet";
 // Main Tabs Component
 const Tabs = ({ children, defaultTab = 0, variant = 'default', className = '' }) => {
   const [activeTab, setActiveTab] = useState(defaultTab);
@@ -17,6 +17,18 @@ const Tabs = ({ children, defaultTab = 0, variant = 'default', className = '' })
   
   return (
     <div className={`${baseClasses} ${variantClasses[variant]} ${className}`}>
+      <Helmet>
+        <title>Services – Legal and Notary in Meerut</title>
+        <meta
+          name="description"
+          content="Information on legal and notarial services including affidavit drafting, rent agreement, power of attorney, and criminal case consultation."
+        />
+        <meta
+          name="keywords"
+          content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, MSME Dispute Resolution"
+        />
+        {/* <link rel="canonical" href="https://yourdomain.com/services" /> */}
+      </Helmet>
       {/* Tab Headers */}
       <div className="flex flex-wrap border-b border-gray-200 bg-gray-50 rounded-t-lg overflow-hidden">
         {tabItems.map((tab, index) => (

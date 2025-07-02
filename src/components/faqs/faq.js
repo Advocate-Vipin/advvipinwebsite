@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 import Navbar from "../navbar/navbar";
 import Footer from "../features/footer";
+import { Helmet } from "react-helmet";
+
 
 export default function FAQs() {
   return (
     <div className="overflow-x-hidden">
       <Navbar />
+        <Helmet>
+        <title>Frequently Asked Legal & Notarial Questions | Meerut</title>
+        <meta
+          name="description"
+          content="Explore frequently asked legal and notarial questions related to affidavits, rent agreements, power of attorney, criminal law, and more as per Indian legal procedures."
+        />
+        {/* <link rel="canonical" href="https://meerutnotary.in/faqs" /> */}
+      </Helmet>
       <section className="relative z-20 bg-white pb-12 pt-10 dark:bg-dark lg:pb-[90px] lg:pt-[20px]">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-wrap justify-center">

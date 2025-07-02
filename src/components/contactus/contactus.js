@@ -2,12 +2,27 @@ import React,{useState} from 'react';
 import Navbar from '../navbar/navbar';
 import Footer from '../features/footer';
 import ChamberLocation from '../features/chamberLocation';
+import { Helmet } from "react-helmet";
+
+
 
 export default function ContactUs() {
   const [mapOpen, setMapOpen] = useState(false);
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
+      <Helmet>
+        <title>Contact – Advocate & Notary in Meerut</title>
+        <meta
+          name="description"
+          content="Get in touch with Vipin Chand Garg for professional legal advice and Notary as per Indian legal norms."
+        />
+        <meta
+          name="keywords"
+          content="Contact Advocate Meerut, Notary Public Meerut, Legal Help Meerut"
+        />
+        <link rel="canonical" href="https://yourdomain.com/contact" />
+      </Helmet>
       <Navbar />
       <ChamberLocation mapOpen={mapOpen} setMapOpen={setMapOpen} />
       <section className="relative py-2 overflow-hidden">
