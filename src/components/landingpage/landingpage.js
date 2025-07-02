@@ -157,7 +157,6 @@ export default function LandingPage() {
                 </p>
               </div>
 
-              {/* Call to Action */}
               <div className="pt-4">
                 <button
                   onClick={LearnMore}
