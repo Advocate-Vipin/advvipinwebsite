@@ -163,7 +163,7 @@ export default function LandingPage() {
                   onClick={LearnMore}
                   className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium text-white bg-blue-600 border border-transparent rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 >
-                  Learn More
+                  Know More
                 </button>
               </div>
             </div>
