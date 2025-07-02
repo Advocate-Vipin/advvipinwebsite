@@ -18,7 +18,7 @@ const Tabs = ({ children, defaultTab = 0, variant = 'default', className = '' })
   return (
     <div className={`${baseClasses} ${variantClasses[variant]} ${className}`}>
       <Helmet>
-        <title>Services – Legal and Notary in Meerut</title>
+        
         <meta
           name="description"
           content="Information on legal and notarial services including affidavit drafting, rent agreement, power of attorney, and criminal case consultation."

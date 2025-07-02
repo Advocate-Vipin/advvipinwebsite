@@ -9,10 +9,14 @@ export default function FAQs() {
     <div className="overflow-x-hidden">
       <Navbar />
         <Helmet>
-        <title>Frequently Asked Legal & Notarial Questions | Meerut</title>
+        
         <meta
           name="description"
           content="Explore frequently asked legal and notarial questions related to affidavits, rent agreements, power of attorney, criminal law, and more as per Indian legal procedures."
+        />
+        <meta
+          name="keywords"
+          content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, MSME Dispute Resolution"
         />
         {/* <link rel="canonical" href="https://meerutnotary.in/faqs" /> */}
       </Helmet>

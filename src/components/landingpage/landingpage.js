@@ -26,7 +26,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden">
       <Helmet>
-        <title>Advocate Vipin Chand Garg- Notary (Government of India) in Meerut, Uttar Pradesh</title>
+        
         <meta
           name="description"
           content="Vipin Chand Garg is an Advocate and Notary (Government of India) practicing in Meerut Court, Uttar Pradesh. Offers legal advice and notarial services as per Indian law."
