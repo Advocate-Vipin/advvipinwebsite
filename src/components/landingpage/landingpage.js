@@ -26,7 +26,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden">
       <Helmet>
-        
+        <title>Vipin Chand Garg – Advocate & Notary Public in Meerut | Legal & Notary Services</title>
         <meta
           name="description"
           content="Vipin Chand Garg is an Advocate and Notary (Government of India) practicing in Meerut Court, Uttar Pradesh. Offers legal advice and notarial services as per Indian law."
@@ -35,7 +35,7 @@ export default function LandingPage() {
           name="keywords"
           content="Advocate Meerut, Notary Public Meerut, Legal Documentation, Criminal Law Meerut, Notary India, Notary Services Meerut, Legal Services Meerut, Vipin Chand Garg Advocate, Meerut Advocate, Notary Government of India, Notary, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, MSME Dispute Resolution"
         />
-        {/* <link rel="canonical" href="https://yourdomain.com/" /> */}
+        <link rel="canonical" href="https://advocatevipinchandgarg.netlify.app/" />
       </Helmet>
       <Dialog open={open} onClose={setOpen} className="relative z-50">
         <DialogBackdrop

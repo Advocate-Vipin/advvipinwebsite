@@ -12,10 +12,9 @@ export default function ContactUs() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
       <Helmet>
-        
         <meta
           name="description"
-          content="Get in touch with Vipin Chand Garg for professional legal advice and Notary as per Indian legal norms."
+          content="Contact Vipin Chand Garg, Advocate & Notary in Meerut Court, for general professional inquiries related to legal and notarial services under Indian law."
         />
         <meta
           name="keywords"

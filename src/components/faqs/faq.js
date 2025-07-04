@@ -9,7 +9,7 @@ export default function FAQs() {
     <div className="overflow-x-hidden">
       <Navbar />
         <Helmet>
-        
+        <title>FAQs | Advocate & Notary - Vipin Chand Garg, Meerut</title>
         <meta
           name="description"
           content="Explore frequently asked legal and notarial questions related to affidavits, rent agreements, power of attorney, criminal law, and more as per Indian legal procedures."
@@ -18,7 +18,7 @@ export default function FAQs() {
           name="keywords"
           content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, MSME Dispute Resolution"
         />
-        {/* <link rel="canonical" href="https://meerutnotary.in/faqs" /> */}
+        <link rel="canonical" href="https://advocatevipinchandgarg.netlify.app/faq" />
       </Helmet>
       <section className="relative z-20 bg-white pb-12 pt-10 dark:bg-dark lg:pb-[90px] lg:pt-[20px]">
         <div className="container mx-auto px-4 max-w-7xl">

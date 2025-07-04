@@ -41,7 +41,7 @@ export default function Navbar() {
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex shrink-0 items-center">
                 <img
-                  alt="Notary logo"
+                  alt="Vipin Chand Garg - Advocate Notary Meerut"
                   src={brandLogo}
                   className="h-8 sm:h-10 lg:h-12 w-auto"
                 />
