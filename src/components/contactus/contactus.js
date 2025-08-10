@@ -25,12 +25,21 @@ export default function ContactUs() {
       <Navbar />
       <ChamberLocation mapOpen={mapOpen} setMapOpen={setMapOpen} />
       <section className="relative py-2 overflow-hidden">
-        {/* Animated background elements */}
+        {/* Animated background elements */}          
+        <div className="text-center mb-1 sm:mb-1">
+            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-blue-50/80 via-indigo-50/80 to-purple-50/80 backdrop-blur-sm border border-blue-200/30 shadow-lg mb-1">
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 animate-pulse"></div>
+              <span className="text-sm font-semibold bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent">
+                Professional Legal Services • Contact Information
+              </span>
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 animate-pulse delay-500"></div>
+            </div>
+            </div>
         <div className="absolute top-10 left-10 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         
         <div className="relative container px-6 py-12 mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-4">
 
             <h1 className="mt-2 text-4xl md:text-6xl font-bold bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 bg-clip-text text-transparent leading-tight">
               Contact
