@@ -251,7 +251,7 @@ export default function Footer() {
                                 
                                 <div className="bg-gradient-to-r from-amber-50/5 to-orange-50/5 rounded-xl p-4 border border-amber-500/20">
                                     <p className="text-gray-400 text-sm leading-relaxed">
-                                        <span className="font-semibold text-amber-400">Notice:</span> This website is for informational purposes only and does not constitute legal advice. Please consult with the advocate for specific legal matters.
+                                        <span className="font-semibold text-amber-400">Notice:</span> This website is for general informational purposes only and does not constitute legal advice. The content provided on this website does not constitute, and shall not be construed as, legal advice or a substitute for professional legal advice. Users encountering any legal issues must, in all cases, seek independent legal counsel. All material and information present on this website is the intellectual property. No part thereof shall be used, with or without adaptation, copied, distributed, or modified without the express prior written consent.
                                     </p>
                                 </div>
                             </div>
