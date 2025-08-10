@@ -12,7 +12,6 @@ export default function LandingPage() {
   const [open, setOpen] = useState(true);
   const [mapOpen, setMapOpen] = useState(false);
 
-
   const navigate = useNavigate();
   
   const LearnMore = () => {
@@ -24,7 +23,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col overflow-x-hidden">
+    <div className="min-h-screen flex flex-col overflow-x-hidden bg-gradient-to-br from-gray-50 to-blue-50">
       <Helmet>
         <title>Vipin Chand Garg – Advocate & Notary Public in Meerut | Legal & Notary Services</title>
         <meta
@@ -37,29 +36,30 @@ export default function LandingPage() {
         />
         <link rel="canonical" href="https://advocatevipinchandgarg.netlify.app/" />
       </Helmet>
+
       <Dialog open={open} onClose={setOpen} className="relative z-50">
         <DialogBackdrop
           transition
-          className="fixed inset-0 bg-gray-500/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
+          className="fixed inset-0 bg-gray-900/50 backdrop-blur-sm transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
         />
 
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <DialogPanel
               transition
-              className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-4xl data-closed:sm:translate-y-0 data-closed:sm:scale-95 mx-4"
+              className="relative transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-4xl data-closed:sm:translate-y-0 data-closed:sm:scale-95 mx-4 border border-gray-200"
             >
-              <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div className="bg-white px-6 pt-6 pb-4 sm:p-8 sm:pb-6">
                 <div className="sm:flex sm:items-start">
-                  <div className="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:size-10">
-                    <ExclamationTriangleIcon aria-hidden="true" className="size-6 text-red-600" />
+                  <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-amber-100 sm:mx-0 sm:h-10 sm:w-10">
+                    <ExclamationTriangleIcon aria-hidden="true" className="h-6 w-6 text-amber-600" />
                   </div>
-                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                    <DialogTitle as="h3" className="text-xl sm:text-2xl font-bold text-gray-900">
-                      Disclaimer
+                  <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                    <DialogTitle as="h3" className="text-xl font-bold text-gray-900 sm:text-2xl">
+                      Important Disclaimer
                     </DialogTitle>
                     <div className="mt-2">
-                      <div className="text-xs sm:text-sm text-gray-700 leading-relaxed space-y-2 max-h-60 sm:max-h-80 overflow-y-auto">
+                      <div className="text-sm text-gray-700 leading-relaxed space-y-3 max-h-60 overflow-y-auto sm:text-base sm:max-h-80">
                         <p>
                           In adherence to the rules of Bar Council of India, Advocates are not permitted to solicit work or advertise our services. This website has been developed solely for informational purposes and by clicking "I AGREE" user acknowledges and agree to the following:
                         </p>
@@ -86,11 +86,11 @@ export default function LandingPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6 gap-3">
+              <div className="bg-gray-50 px-6 py-4 sm:flex sm:flex-row-reverse sm:px-8">
                 <button
                   type="button"
                   onClick={() => setOpen(false)}
-                  className="inline-flex w-full justify-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 sm:w-auto transition-colors"
+                  className="inline-flex w-full justify-center rounded-lg bg-green-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-green-500 sm:ml-3 sm:w-auto transition-colors duration-200"
                 >
                   I AGREE
                 </button>
@@ -98,7 +98,7 @@ export default function LandingPage() {
                   type="button"
                   data-autofocus
                   onClick={() => window.location.href = 'https://www.google.com'}
-                  className="mt-3 sm:mt-0 inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:w-auto transition-colors"
+                  className="mt-3 inline-flex w-full justify-center rounded-lg bg-red-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:mt-0 sm:w-auto transition-colors duration-200"
                 >
                   I DISAGREE
                 </button>
@@ -108,62 +108,75 @@ export default function LandingPage() {
         </div>
       </Dialog>
 
-
       {/* Chamber Location Map Dialog */}
       <ChamberLocation mapOpen={mapOpen} setMapOpen={setMapOpen} />
-
 
       {/* Navigation */}
       <Navbar />
       
       {/* Main Content */}
-      <main className="flex-1 bg-white">
-        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-12 lg:pb-16">
-          <div className="max-w-4xl">
+      <main className="flex-1">
+        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-12 lg:pt-22 pb-12 sm:pb-16 lg:pb-20">
+          <div className="max-w-5xl">
             {/* Header */}
-            <div className="mb-8 sm:mb-12">
-              <h1 onClick={contactdetails} className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 cursor-pointer">
+            <div className="mb-12 sm:mb-16">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 border border-blue-200 mb-6">
+                <span className="text-sm font-medium text-blue-700">Legal Professional • Meerut, Uttar Pradesh</span>
+              </div>
+              
+              <h1 onClick={contactdetails} className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 cursor-pointer hover:text-blue-900 transition-colors duration-300 leading-tight">
                 Vipin Chand Garg
               </h1>
-              <p onClick={contactdetails} className="text-base sm:text-lg text-red-600 cursor-pointer">
+              
+              <p onClick={contactdetails} className="text-lg sm:text-xl lg:text-2xl font-semibold text-red-600 cursor-pointer hover:text-red-700 transition-colors duration-300">
                 Advocate & Notary (Government of India)
               </p>
             </div>
 
-            {/* Main Content */}
-            <div className="prose prose-gray max-w-none">
-              <div className="text-sm sm:text-base text-black-700 leading-relaxed space-y-4 sm:space-y-6 mb-8">
-                <p>
-                  <strong className="cursor-pointer" onClick={contactdetails}>Vipin Chand Garg</strong> is an Advocate enrolled with the Bar Council and has been engaged in the practice of law for over 25 years. His professional work includes matters related to criminal law, legal documentation and drafting, and other areas of legal practice, carried out in accordance with applicable Indian legal provisions.
-                </p>
-                
-                <p>
-                  In addition to legal practice, <strong onClick={contactdetails} className="cursor-pointer">Vipin Chand Garg</strong> is a Notary appointed by the Central Government of India under the Notaries Act, 1952. His Notarial functions are performed in accordance with statutory provisions, including attestation, verification of documents, rent agreements and many more. He has also authored legal publications intended for academic and professional reference, covering various aspects of Indian law.
-                </p>
-                
-                <div>
-                  <p className="mb-2">
-                    He practices law in <strong onClick={()=> setMapOpen(true)} className="cursor-pointer"> Meerut, Uttar Pradesh</strong>. Chamber is located at:
+            {/* Main Content Card */}
+            <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 sm:p-10 lg:p-12 hover:shadow-2xl transition-shadow duration-300">
+              <div className="prose prose-lg max-w-none">
+                <div className="text-base sm:text-lg text-gray-700 leading-relaxed space-y-6 mb-10">
+                  <p className="text-gray-600 first-letter:text-5xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left first-letter:leading-none">
+                    <strong className="cursor-pointer text-gray-900 hover:text-blue-700 transition-colors duration-200" onClick={contactdetails}>Vipin Chand Garg</strong> is an Advocate enrolled with the Bar Council and has been engaged in the practice of law for over <span className="font-semibold text-gray-900">25 years</span>. His professional work includes matters related to criminal law, legal documentation and drafting, and other areas of legal practice, carried out in accordance with applicable Indian legal provisions.
                   </p>
-                  <div onClick={()=> setMapOpen(true)} className="bg-gray-50 p-3 sm:p-4 rounded-lg border-l-4 border-blue-400 cursor-pointer hover:bg-gray-100 transition-colors">
-                    <strong className="font-medium text-gray-900 text-sm sm:text-base">
-                      Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, Beside Shiv Mandir, Opposite Election Office, Meerut Court, Uttar Pradesh— 250001, India.
-                    </strong>
+                  
+                  <p className="text-gray-600">
+                    In addition to legal practice, <strong onClick={contactdetails} className="cursor-pointer text-gray-900 hover:text-blue-700 transition-colors duration-200">Vipin Chand Garg</strong> is a <span className="font-semibold text-gray-900">Notary appointed by the Central Government of India</span> under the Notaries Act, 1952. His Notarial functions are performed in accordance with statutory provisions, including attestation, verification of documents, rent agreements and many more. He has also authored legal publications intended for academic and professional reference, covering various aspects of Indian law.
+                  </p>
+                  
+                  <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                    <p className="mb-4 text-gray-700">
+                      He practices law in <strong onClick={()=> setMapOpen(true)} className="cursor-pointer text-blue-700 hover:text-blue-800 transition-colors duration-200 underline"> Meerut, Uttar Pradesh</strong>. Chamber is located at:
+                    </p>
+                    <div onClick={()=> setMapOpen(true)} className="bg-white rounded-lg p-4 border-l-4 border-blue-500 cursor-pointer hover:bg-gray-50 transition-colors duration-200 shadow-sm">
+                      <div className="flex items-start gap-3">
+                        <MapIcon className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                        <strong className="font-semibold text-gray-900 text-base leading-relaxed">
+                          Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, Beside Shiv Mandir, Opposite Election Office, Meerut Court, Uttar Pradesh— 250001, India.
+                        </strong>
+                      </div>
+                    </div>
                   </div>
+                  
+                  <p className="text-gray-600 bg-amber-50 border border-amber-200 rounded-lg p-4 italic">
+                    This website is intended to provide general professional information as permitted under the Bar Council of India Rules. It does not serve as a platform for solicitation or advertisement.
+                  </p>
                 </div>
-                
-                <p>
-                  This website is intended to provide general professional information as permitted under the Bar Council of India Rules. It does not serve as a platform for solicitation or advertisement.
-                </p>
-              </div>
 
-              <div className="pt-4">
-                <button
-                  onClick={LearnMore}
-                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium text-white bg-blue-600 border border-transparent rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                >
-                  Know More
-                </button>
+                <div className="pt-6 border-t border-gray-200">
+                  <button
+                    onClick={LearnMore}
+                    className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-blue-600 border border-transparent rounded-xl hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  >
+                    <span className="flex items-center gap-2">
+                      Know More
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
