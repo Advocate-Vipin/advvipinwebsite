@@ -98,7 +98,7 @@ export default function Footer() {
                             </button>
                             <button
                                 type="button"
-                                onClick={() => window.location.href = 'https://www.google.com'}
+                                onClick={() => window.location.href = 'https://share.google/qDX4FH3pJTHJ2rbAe'}
                                 className="group relative mt-3 sm:mt-0 inline-flex w-full justify-center items-center rounded-2xl bg-gradient-to-r from-slate-600 via-slate-700 to-slate-800 px-8 py-4 text-sm font-bold text-white shadow-xl hover:shadow-2xl sm:w-auto transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 overflow-hidden"
                             >
                                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
