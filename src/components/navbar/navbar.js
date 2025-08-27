@@ -10,6 +10,7 @@ const navigation = [
     { name: 'Practice Area', href: '/practicearea', current: false },
     { name: 'FAQs', href: '/faqs', current: false },
     { name: 'Contact', href: '/contactdetails', current: false },
+    { name: 'Notary', href: '/Notary', current: false },
 ]
 
 function classNames(...classes) {

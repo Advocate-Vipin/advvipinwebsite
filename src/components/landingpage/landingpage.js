@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../navbar/navbar";
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
@@ -7,6 +7,12 @@ import { useNavigate } from "react-router-dom";
 import {MapIcon} from "@heroicons/react/24/outline";
 import ChamberLocation from "../features/chamberLocation";
 import { Helmet } from "react-helmet";
+import {
+  DocumentTextIcon, 
+} from '@heroicons/react/24/outline';
+
+import NotaryServicesSection from "../notary/notary";
+
 
 export default function LandingPage() {
   const [open, setOpen] = useState(true);
@@ -197,6 +203,11 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
+        <NotaryServicesSection />
+
+        {/* Legal Disclaimer */}
+
       </main>
 
       {/* Footer */}
