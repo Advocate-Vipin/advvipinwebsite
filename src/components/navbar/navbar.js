@@ -4,14 +4,10 @@ import brandLogo from '../../assets/logo.png'; // Adjust the path as necessary
 import profilephoto from '../../assets/vipin.jpg';
 import Tooltip from '../features/tooltip';
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const navigation = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'Practice Area', href: '/practicearea', current: false },
-    { name: 'FAQs', href: '/faqs', current: false },
-    { name: 'Contact', href: '/contactdetails', current: false },
-    { name: 'Notary', href: '/Notary', current: false },
-]
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -19,10 +15,65 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const navigate = useNavigate();
+  const [home, setHome]=useState(false);
+  const [practicearea, setPracticearea]=useState(false);
+  const [faqs, setFaqs]=useState(false);  
+  const [contactdetails, setContactdetails]=useState(false);
+  const [notary, setNotary]=useState(false);
 
+  const { pathname } = useLocation();        // ← always up-to-date
+
+  /* Single handler reused for every link */
+  const handleNav = (href) => () => navigate(href);
   const navigationClicks = (href) => () => {
     navigate(href);
   };
+
+  useEffect(() => {
+    if(window.location.pathname=='/'){
+      setHome(true);
+      setPracticearea(false);
+      setFaqs(false);
+      setContactdetails(false);
+      setNotary(false);
+
+    }else if(window.location.pathname=='/practicearea'){
+      setHome(false); 
+      setPracticearea(true);
+      setFaqs(false);
+      setContactdetails(false);
+      setNotary(false); 
+    }else if(window.location.pathname=='/faqs'){
+      setHome(false); 
+      setPracticearea(false);
+      setFaqs(true);
+      setContactdetails(false);
+      setNotary(false);
+    }else if(window.location.pathname=='/contactdetails'){
+      setHome(false);
+      setPracticearea(false);
+      setFaqs(false); 
+      setContactdetails(true);
+      setNotary(false);
+    }else if(window.location.pathname=='/Notary'){
+      setHome(false);
+      setPracticearea(false);
+      setFaqs(false);
+      setContactdetails(false);
+      setNotary(true);
+    }
+
+    console.log("Current path:", );
+  }, []);
+
+  const navigation = [
+      { name: 'Home', href: '/', current: home },
+      { name: 'Practice Area', href: '/practicearea', current: practicearea },
+      { name: 'FAQs', href: '/faqs', current: faqs },
+      { name: 'Contact', href: '/contactdetails', current: contactdetails },
+      { name: 'Notary', href: '/Notary', current: notary },
+  ]
+
 
   return (
     <div className="w-full overflow-x-hidden overflow-y-hidden relative">

@@ -564,13 +564,12 @@ export default function NotaryPage() {
             <div className="text-center">
               <div className="inline-flex items-center px-6 py-3 bg-amber-100 rounded-full border border-amber-200 mb-4">
                 <DocumentTextIcon className="h-5 w-5 text-amber-600 mr-2" />
-                <span className="text-sm font-semibold text-amber-800">Legal Notice</span>
+                <span className="text-sm font-semibold text-amber-800">
+                  This website is intended to provide general professional information as permitted under the Bar Council of India Rules. 
+                  It does not serve as a platform for solicitation or advertisement. All information is provided for educational purposes 
+                  only and should not be construed as legal advice.
+                </span>
               </div>
-              <p className="text-sm sm:text-base text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                This website is intended to provide general professional information as permitted under the Bar Council of India Rules. 
-                It does not serve as a platform for solicitation or advertisement. All information is provided for educational purposes 
-                only and should not be construed as legal advice.
-              </p>
             </div>
           </div>
         </section>
