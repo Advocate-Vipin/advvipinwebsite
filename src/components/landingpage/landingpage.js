@@ -203,9 +203,6 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-
-        <NotaryServicesSection />
-
         {/* Legal Disclaimer */}
 
       </main>
