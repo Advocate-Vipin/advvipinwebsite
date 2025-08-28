@@ -271,7 +271,7 @@ const NotaryServicesSection = () => {
 
             {/* Tab Navigation */}
             <div className="flex flex-wrap justify-center mb-8 lg:mb-12">
-              <div className="flex bg-white/80 backdrop-blur-sm rounded-2xl p-2 border border-gray-200/60 shadow-lg shadow-purple-500/10">
+              <div className="flex bg-white/80 backdrop-blur-sm rounded-2xl p-2 border border-gray-200/60 shadow-lg shadow-purple-500/10 overflow-x-auto no-scrollbar">
                 {Object.entries(serviceData).map(([key, data]) => (
                   <button
                     key={key}
