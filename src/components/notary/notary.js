@@ -40,7 +40,8 @@ import {
   HandRaisedIcon,
   QuestionMarkCircleIcon,
   PlusIcon,
-  MinusIcon
+  MinusIcon,
+  GlobeAsiaAustraliaIcon
 } from '@heroicons/react/24/outline';
 
 const NotaryServicesSection = () => {
@@ -263,7 +264,7 @@ const NotaryServicesSection = () => {
                 <span className="text-sm font-medium text-gray-700">Pan-India Validity</span>
               </div>
               <div className="flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg">
-                <GlobeAltIcon className="h-5 w-5 text-emerald-600 mr-2" />
+                <GlobeAsiaAustraliaIcon className="h-5 w-5 text-emerald-600 mr-2" />
                 <span className="text-sm font-medium text-gray-700">International Validity</span>
               </div>
             </div>
