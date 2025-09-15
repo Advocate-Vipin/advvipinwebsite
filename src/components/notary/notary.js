@@ -122,6 +122,12 @@ const NotaryServicesSection = () => {
           details: "Government-issued photo identification is mandatory for all notarial services to verify identity."
         },
         {
+          icon: <UserGroupIcon className="h-6 w-6 text-pink-500" />,
+          title: "Photograph",
+          description: "Passport size photograph",
+          details: "A recent passport size photograph is required. This helps further verify identity and supports the completeness of the documentation process."
+        },
+        {
           icon: <DocumentTextIcon className="h-6 w-6 text-blue-600" />,
           title: "Original Documents",
           description: "Must be presented in their original form",
