@@ -20,7 +20,7 @@ export default function Navbar() {
   const [faqs, setFaqs]=useState(false);  
   const [contactdetails, setContactdetails]=useState(false);
   const [notary, setNotary]=useState(false);
-
+  const [msme, setMsme] = useState(false);
   const { pathname } = useLocation();        // ← always up-to-date
 
   /* Single handler reused for every link */
@@ -36,42 +36,52 @@ export default function Navbar() {
       setFaqs(false);
       setContactdetails(false);
       setNotary(false);
-
+      setMsme(false);
     }else if(window.location.pathname=='/practicearea'){
-      setHome(false); 
+      setHome(false);
       setPracticearea(true);
       setFaqs(false);
       setContactdetails(false);
-      setNotary(false); 
+      setNotary(false);
+      setMsme(false);
     }else if(window.location.pathname=='/faqs'){
-      setHome(false); 
+      setHome(false);
       setPracticearea(false);
       setFaqs(true);
       setContactdetails(false);
       setNotary(false);
+      setMsme(false);
     }else if(window.location.pathname=='/contactdetails'){
       setHome(false);
       setPracticearea(false);
-      setFaqs(false); 
+      setFaqs(false);
       setContactdetails(true);
       setNotary(false);
+      setMsme(false);
     }else if(window.location.pathname=='/Notary'){
       setHome(false);
       setPracticearea(false);
       setFaqs(false);
       setContactdetails(false);
       setNotary(true);
+      setMsme(false);
+    }else if(window.location.pathname=='/msme'){
+      setHome(false);
+      setPracticearea(false);
+      setFaqs(false);
+      setContactdetails(false);
+      setNotary(false);
+      setMsme(true);
     }
-
-    console.log("Current path:", );
   }, []);
 
   const navigation = [
-      { name: 'Home', href: '/', current: home },
-      { name: 'Practice Area', href: '/practicearea', current: practicearea },
-      { name: 'FAQs', href: '/faqs', current: faqs },
-      { name: 'Contact', href: '/contactdetails', current: contactdetails },
-      { name: 'Notary', href: '/Notary', current: notary },
+    { name: 'Home', href: '/', current: home },
+    { name: 'Practice Area', href: '/practicearea', current: practicearea },
+    { name: 'MSME Cases', href: '/msme', current: msme },
+    { name: 'Notary', href: '/Notary', current: notary },
+    { name: 'FAQs', href: '/faqs', current: faqs },
+    { name: 'Contact', href: '/contactdetails', current: contactdetails },
   ]
 
 

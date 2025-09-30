@@ -7,11 +7,6 @@ import { useNavigate } from "react-router-dom";
 import {MapIcon} from "@heroicons/react/24/outline";
 import ChamberLocation from "../features/chamberLocation";
 import { Helmet } from "react-helmet";
-import {
-  DocumentTextIcon, 
-} from '@heroicons/react/24/outline';
-
-import NotaryServicesSection from "../notary/notary";
 
 
 export default function LandingPage() {
@@ -162,7 +157,10 @@ export default function LandingPage() {
                   <p className="text-gray-600 first-letter:text-5xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left first-letter:leading-none">
                     <strong className="cursor-pointer text-gray-900 hover:text-blue-700 transition-colors duration-200" onClick={contactdetails}>Vipin Chand Garg</strong> is an Advocate enrolled with the Bar Council and has been engaged in the practice of law for over <span className="font-semibold text-gray-900">25 years</span>. His professional work includes matters related to criminal law, legal documentation and drafting, and other areas of legal practice, carried out in accordance with applicable Indian legal provisions.
                   </p>
-                  
+
+                  <p className="text-gray-600">
+                    <strong onClick={contactdetails} className="cursor-pointer text-gray-900 hover:text-blue-700 transition-colors duration-200">Vipin Chand Garg</strong> also specializes in <span className="font-semibold text-gray-900">MSME (Micro, Small and Medium Enterprises) legal practice</span> under the MSMED Act, 2006. His professional work includes representation in delayed payment disputes, facilitation council proceedings, statutory compliance advisory, and dispute resolution matters. He provides legal assistance in MSME registration processes, payment recovery cases, and arbitration proceedings as per the provisions of the Micro, Small and Medium Enterprises Development Act, 2006, ensuring compliance with all regulatory requirements.
+                  </p>
                   <p className="text-gray-600">
                     In addition to legal practice, <strong onClick={contactdetails} className="cursor-pointer text-gray-900 hover:text-blue-700 transition-colors duration-200">Vipin Chand Garg</strong> is a <span className="font-semibold text-gray-900">Notary appointed by the Central Government of India</span> under the Notaries Act, 1952. His Notarial functions are performed in accordance with statutory provisions, including attestation, verification of documents, rent agreements and many more. He has also authored legal publications intended for academic and professional reference, covering various aspects of Indian law.
                   </p>
@@ -181,9 +179,19 @@ export default function LandingPage() {
                     </div>
                   </div>
                   
-                  <p className="text-gray-600 bg-amber-50 border border-amber-200 rounded-lg p-4 italic">
-                    This website is intended to provide general professional information as permitted under the Bar Council of India Rules. It does not serve as a platform for solicitation or advertisement.
-                  </p>
+                  <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+                    <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+                      <div className="flex items-start space-x-3">
+                        <ExclamationTriangleIcon className="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-amber-800 mb-2">Professional Disclaimer</h4>
+                          <p className="text-amber-700 text-sm leading-relaxed">
+                            This website is intended to provide general professional information as permitted under the Bar Council of India Rules. It does not serve as a platform for solicitation or advertisement. All information is provided for educational purposes only and should not be construed as legal advice.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
 
                 <div className="pt-6 border-t border-gray-200">

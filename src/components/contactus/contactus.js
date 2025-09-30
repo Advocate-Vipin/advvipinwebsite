@@ -3,7 +3,7 @@ import Navbar from '../navbar/navbar';
 import Footer from '../features/footer';
 import ChamberLocation from '../features/chamberLocation';
 import { Helmet } from "react-helmet";
-
+import {ExclamationTriangleIcon} from '@heroicons/react/24/outline';
 
 
 export default function ContactUs() {
@@ -143,6 +143,21 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+            <div className="flex items-start space-x-3">
+              <ExclamationTriangleIcon className="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" />
+              <div>
+                <h4 className="font-semibold text-amber-800 mb-2">Professional Disclaimer</h4>
+                <p className="text-amber-700 text-sm leading-relaxed">
+                  This website is intended to provide general professional information as permitted under the Bar Council of India Rules. 
+                  It does not serve as a platform for solicitation or advertisement. All information is provided for educational purposes 
+                  only and should not be construed as legal advice.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
       <Footer />
     </div>

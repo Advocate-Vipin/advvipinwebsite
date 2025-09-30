@@ -5,7 +5,7 @@ import FAQs from "../faqs/faq";
 import ContactUs from "../contactus/contactus";
 import Services from "../services/services";
 import NotaryServicesSection from "../notary/notary";
-
+import MSMEServices from "../msme/msme";
 
 export default function MyRoutes(){
     return(
@@ -16,7 +16,7 @@ export default function MyRoutes(){
                 <Route path="/contactdetails" element={<ContactUs />} />
                 <Route path="/practicearea" element={<Services />} />
                 <Route path="/Notary" element={<NotaryServicesSection />} />
-
+                <Route path="/msme" element={<MSMEServices />} />
             </Routes>
         </div>
     );

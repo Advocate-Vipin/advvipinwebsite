@@ -570,19 +570,22 @@ export default function NotaryPage() {
         <NotaryServicesSection />
 
         {/* Legal Disclaimer */}
-        <section className="py-8 sm:py-12 bg-gray-50/80">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <div className="inline-flex items-center px-6 py-3 bg-amber-100 rounded-full border border-amber-200 mb-4">
-                <span className="text-sm font-semibold text-amber-800">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+            <div className="flex items-start space-x-3">
+              <ExclamationTriangleIcon className="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" />
+              <div>
+                <h4 className="font-semibold text-amber-800 mb-2">Professional Disclaimer</h4>
+                <p className="text-amber-700 text-sm leading-relaxed">
                   This website is intended to provide general professional information as permitted under the Bar Council of India Rules. 
                   It does not serve as a platform for solicitation or advertisement. All information is provided for educational purposes 
                   only and should not be construed as legal advice.
-                </span>
+                </p>
               </div>
             </div>
           </div>
         </section>
+        
       </main>
 
       {/* Chamber Location Modal */}

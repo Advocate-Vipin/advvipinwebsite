@@ -137,11 +137,11 @@ export default function Footer() {
                         <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group-hover:shadow-2xl">
                             <ul className="space-y-4">
                                 {[
-                                    'Criminal Law',
+                                    'MSME Cases',
+                                    'Criminal Cases',
                                     'Notarial Services', 
                                     'Civil Cases',
                                     'Family Cases',
-                                    'MSME Cases'
                                 ].map((service) => (
                                     <li key={service}>
                                         <button 
@@ -203,7 +203,7 @@ export default function Footer() {
                                             <img src={callIcon} alt="Call Icon" className="w-5 h-5" />
                                         </div>
                                         <div>
-                                            <p className="text-white font-semibold mb-1">Call Us</p>
+                                            <p className="text-white font-semibold mb-1">Contact</p>
                                             <a href="tel:+919568529826" className="text-gray-300 hover:text-green-400 transition-colors text-sm cursor-pointer group-hover/phone:text-green-300">
                                                 +91-9568529826
                                             </a>
