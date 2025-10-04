@@ -166,7 +166,7 @@ const Services = () => {
                       <h4 className="text-base sm:text-lg font-bold text-purple-900">Micro and Small Enterprises Facilitation Council (MSEFC) Proceedings</h4>
                     </div>
                     <p className="text-xs sm:text-sm text-purple-700 leading-relaxed mb-3">
-                      Conciliation requests and subsequent arbitration before the Micro and Small Enterprises Facilitation Council facilitated per rules
+                      Conciliation requests and subsequent arbitration before the Micro and Small Enterprises Facilitation Council (MSEFC) facilitated per rules.
                     </p>
                     <ul className="space-y-2">
                       {[
@@ -249,13 +249,13 @@ const Services = () => {
                       <h4 className="text-base sm:text-lg font-bold text-orange-900">Legal Documentation</h4>
                     </div>
                     <p className="text-xs sm:text-sm text-orange-700 leading-relaxed mb-3">
-                      Drafting and review of MSME-related legal documents
+                      Drafting and review of Micro, Small and Medium Enterprises (MSME)- related legal documents
                     </p>
                     <ul className="space-y-2">
                       {[
                         'Supply agreements and contracts',
                         'Purchase orders documentation',
-                        'Legal notices under MSMED Act',
+                        'Legal notices under Micro, Small and Medium Enterprises Development (MSMED) Act',
                         'Agreement review and advisory'
                       ].map((item, idx) => (
                         <li key={idx} className="flex items-start space-x-2 text-xs sm:text-sm text-orange-600">
