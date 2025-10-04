@@ -280,9 +280,9 @@ const Services = () => {
                     <div>
                       <h4 className="font-bold text-blue-900 mb-2 sm:mb-3 text-sm sm:text-base md:text-lg">Information on Micro, Small and Medium Enterprises (MSME) Cases</h4>
                       <p className="text-blue-800 text-xs sm:text-sm md:text-base leading-relaxed">
-                        This information is provided for general understanding of MSME legal matters under the Micro, Small and Medium Enterprises Development Act, 2006, as permitted under the Bar Council of India Rules. 
+                        This information is provided for general understanding of Micro, Small and Medium Enterprises (MSME) legal matters under the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006, as permitted under the Bar Council of India Rules. 
                         It does not constitute legal advice and should not be relied upon as a substitute for consultation with a qualified legal professional. 
-                        Each MSME matter requires individual assessment based on specific facts and applicable statutory provisions.
+                        Each Micro, Small and Medium Enterprises (MSME) matter requires individual assessment based on specific facts and applicable statutory provisions.
                       </p>
                     </div>
                   </div>
