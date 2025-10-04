@@ -40,7 +40,7 @@ const MSMEServices = () => {
 
   const msmeOverview = {
     title: "MSME Legal Services Under MSMED Act 2006",
-    description: "Professional legal representation for Micro, Small and Medium Enterprise matters in accordance with the Micro, Small and Medium Enterprises Development Act, 2006",
+    description: "Matters concerning Micro, Small and Medium Enterprises under the Micro, Small and Medium Enterprises Development Act, 2006, undertaken before Micro and Small Enterprise Facilitation Council (MSEFC).",
     keyPoints: [
       "Delayed payment dispute resolution under Sections 15-24 of MSMED Act 2006",
       "MSEFC (Micro and Small Enterprise Facilitation Council) proceedings",
@@ -55,7 +55,7 @@ const MSMEServices = () => {
       id: 'delayed-payment',
       title: "Delayed Payment Disputes",
       icon: <ClockIcon className="w-8 h-8" />,
-      description: "Legal representation for delayed payment claims under Section 15 of MSMED Act 2006",
+      description: "Legal proceedings for delayed payment claims under Sections 15–18 of the MSMED Act, 2006",
       details: [
         "Claims for payments delayed beyond 45 days from acceptance of goods/services",
         "Interest calculation at three times the bank rate notified by RBI",
@@ -67,7 +67,7 @@ const MSMEServices = () => {
       id: 'msefc-proceedings',
       title: "MSEFC Council Proceedings", 
       icon: <ScaleIcon className="w-8 h-8" />,
-      description: "Representation before Micro and Small Enterprise Facilitation Council",
+      description: "Proceedings before the Facilitation Council taken up within the timelines contemplated by the Act.",
       details: [
         "Filing applications before MSEFC under Section 18 of MSMED Act",
         "Preparation and presentation of cases within 90-day statutory timeline",
@@ -91,12 +91,10 @@ const MSMEServices = () => {
       id: 'compliance',
       title: "MSME Compliance & Documentation",
       icon: <DocumentCheckIcon className="w-8 h-8" />,
-      description: "Legal assistance for MSME registration and compliance matters",
       details: [
         "Udyam Registration process and documentation",
         "Legal review of supplier agreements and contracts",
         "Compliance with MSME classification requirements",
-        "Advisory on statutory provisions and obligations"
       ]
     }
   ];
@@ -232,9 +230,6 @@ const MSMEServices = () => {
       <div className="space-y-8">
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Legal Process for MSME Disputes</h3>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professional legal representation following statutory procedures under MSMED Act 2006
-          </p>
         </div>
         
         <div className="relative">
@@ -302,7 +297,7 @@ const MSMEServices = () => {
         <Navbar />
         
         {/* Hero Section */}
-        <section className="relative pt-20 pb-16 overflow-hidden">
+        <section className="relative pt-5 pb-1 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-indigo-600/5 to-purple-600/10"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -313,7 +308,7 @@ const MSMEServices = () => {
                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"> MSME</span> Cases
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Professional legal representation for Micro, Small and Medium Enterprise matters under the Micro, Small and Medium Enterprises Development Act, 2006
+                Proceedings under Section 18 of the Micro, Small and Medium Enterprises Development Act, 2006
               </p>
             </div>
           </div>

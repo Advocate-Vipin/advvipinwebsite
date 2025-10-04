@@ -95,13 +95,13 @@ const NotaryServicesSection = () => {
           icon: <CheckBadgeIcon className="h-6 w-6 text-emerald-600" />,
           title: "Verify Authenticity",
           description: "Ensures documents are genuine and properly executed through thorough verification",
-          details: "Our notary services ensure that your documents are genuine and properly executed through thorough verification by registered professionals with Central Government authority."
+          details: "Notarisation ensure that your documents are genuine and properly executed through thorough verification by Central Government appointed Notary."
         },
         {
           icon: <StarIcon className="h-6 w-6 text-amber-600" />,
           title: "Provide Credibility",
           description: "Enhanced validity through impartial third-party verification",
-          details: "Notarized documents are more credible and valid because they have been verified by an impartial third party - a certified Central Government notary public."
+          details: "Notarized documents are more credible and valid because they have been verified by an impartial third party - a certified Central Government Notary."
         },
         {
           icon: <HandRaisedIcon className="h-6 w-6 text-pink-600" />,

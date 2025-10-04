@@ -71,10 +71,7 @@ const Services = () => {
               Areas of Practice
             </span>
           </h1>
-          
-          <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Comprehensive legal and notarial services in accordance with Indian law
-          </p>
+
         </div>
 
         {/* Tab Navigation - Matching Notary.js Style */}
@@ -126,7 +123,7 @@ const Services = () => {
                   MSME Legal Services Under MSMED Act 2006
                 </h3>
                 <p className="text-slate-600 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed px-4">
-                  Professional legal representation for Micro, Small and Medium Enterprise matters in accordance with the Micro, Small and Medium Enterprises Development Act, 2006
+                  MSME-related legal matters under the Micro, Small and Medium Enterprises Development Act, 2006
                 </p>
               </div>
 
@@ -172,7 +169,7 @@ const Services = () => {
                       <h4 className="text-base sm:text-lg font-bold text-purple-900">MSEFC Proceedings</h4>
                     </div>
                     <p className="text-xs sm:text-sm text-purple-700 leading-relaxed mb-3">
-                      Representation before Micro and Small Enterprises Facilitation Council
+                      Conciliation requests and subsequent arbitration before the Micro and Small Enterprises Facilitation Council facilitated per rules
                     </p>
                     <ul className="space-y-2">
                       {[
@@ -200,15 +197,11 @@ const Services = () => {
                       </div>
                       <h4 className="text-base sm:text-lg font-bold text-blue-900">MSME Compliance</h4>
                     </div>
-                    <p className="text-xs sm:text-sm text-blue-700 leading-relaxed mb-3">
-                      Legal advisory on MSME registration and statutory compliance
-                    </p>
                     <ul className="space-y-2">
                       {[
-                        'Udyam registration assistance',
-                        'Compliance advisory services',
+                        'Udyam registration',
+                        'Compliance',
                         'Documentation review',
-                        'Regulatory guidance'
                       ].map((item, idx) => (
                         <li key={idx} className="flex items-start space-x-2 text-xs sm:text-sm text-blue-600">
                           <span className="text-blue-500 mt-0.5">•</span>
