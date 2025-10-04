@@ -39,10 +39,7 @@ const Services = () => {
           name="description"
           content="Information on legal and notarial services including affidavit drafting, rent agreement, power of attorney, and criminal case consultation."
         />
-        <meta
-          name="keywords"
-          content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, MSME Dispute Resolution"
-        />
+        <meta name="keywords" content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, Micro, Small and Medium Enterprises (MSME) Dispute Resolution, Micro, Small and Medium Enterprises (MSME) Delayed Payment References (MSMED Act, 2006), Micro and Small Enterprises Facilitation Council (MSEFC) Conciliation Proceedings, Micro and Small Enterprises Facilitation Council (MSEFC) Arbitration, Micro, Small and Medium Enterprises (MSME) Samadhaan E‑Filing, Petitions Related to Micro and Small Enterprises Facilitation Council (MSEFC) Awards, Appeals Under Section 19 (MSMED Act), Micro, Small and Medium Enterprises (MSME) delayed payment and disputes, Section 18 Proceedings, Micro and Small Enterprises Facilitation Council, Section 15 Buyer’s Liability, Section 16 Interest Payment, Section 17 Amount Due, Supplier–Buyer Disputes, Conciliation then Arbitration, Award Enforcement, Execution of Micro and Small Enterprises Facilitation Council (MSEFC) Award, Recovery Proceedings, Deposit under Section 19" />
       </Helmet>
 
       {/* Modern Animated Background */}
@@ -114,16 +111,16 @@ const Services = () => {
 
         {/* Tab Content */}
         <div className="relative cursor-pointer">
-          {/* MSME Tab Content */}
+          {/* Micro, Small and Medium Enterprises (MSME) Tab Content */}
           {activeServiceTab === 'msme' && (
             <div className="animate-fadeIn space-y-6 sm:space-y-8 md:space-y-10">
               {/* Header Section */}
               <div className="text-center">
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-700 to-indigo-800 bg-clip-text text-transparent mb-3 sm:mb-4 px-4">
-                  MSME Legal Services Under MSMED Act 2006
+                  Micro, Small and Medium Enterprises (MSME) Cases Under MSMED Act 2006
                 </h3>
                 <p className="text-slate-600 text-sm sm:text-base md:text-lg max-w-4xl mx-auto leading-relaxed px-4">
-                  MSME-related legal matters under the Micro, Small and Medium Enterprises Development Act, 2006
+                  Micro, Small and Medium Enterprises (MSME)-related legal matters under the Micro, Small and Medium Enterprises Development Act, 2006
                 </p>
               </div>
 
@@ -166,7 +163,7 @@ const Services = () => {
                       <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 flex items-center justify-center border border-purple-200/30 flex-shrink-0">
                         <span className="text-2xl">👥</span>
                       </div>
-                      <h4 className="text-base sm:text-lg font-bold text-purple-900">MSEFC Proceedings</h4>
+                      <h4 className="text-base sm:text-lg font-bold text-purple-900">Micro and Small Enterprises Facilitation Council (MSEFC) Proceedings</h4>
                     </div>
                     <p className="text-xs sm:text-sm text-purple-700 leading-relaxed mb-3">
                       Conciliation requests and subsequent arbitration before the Micro and Small Enterprises Facilitation Council facilitated per rules
@@ -187,7 +184,7 @@ const Services = () => {
                   </div>
                 </div>
 
-                {/* MSME Registration & Compliance Card */}
+                {/* Micro, Small and Medium Enterprises (MSME) Registration & Compliance Card */}
                 <div className="group relative cursor-pointer">
                   <div className="absolute -inset-0.5 sm:-inset-1 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-xl sm:rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
                   <div className="relative bg-gradient-to-br from-blue-50/80 to-blue-100/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-blue-200/50 hover:shadow-xl transition-all duration-300 h-full">
@@ -195,7 +192,7 @@ const Services = () => {
                       <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-r from-blue-500/20 to-cyan-500/20 flex items-center justify-center border border-blue-200/30 flex-shrink-0">
                         <span className="text-2xl">📋</span>
                       </div>
-                      <h4 className="text-base sm:text-lg font-bold text-blue-900">MSME Compliance</h4>
+                      <h4 className="text-base sm:text-lg font-bold text-blue-900">Micro, Small and Medium Enterprises (MSME) Compliance</h4>
                     </div>
                     <ul className="space-y-2">
                       {[

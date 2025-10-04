@@ -39,13 +39,13 @@ const MSMEServices = () => {
   }, []);
 
   const msmeOverview = {
-    title: "MSME Legal Services Under MSMED Act 2006",
-    description: "Matters concerning Micro, Small and Medium Enterprises under the Micro, Small and Medium Enterprises Development Act, 2006, undertaken before Micro and Small Enterprise Facilitation Council (MSEFC).",
+    title: "Micro, Small and Medium Enterprises (MSME) Cases Under Micro, Small and Medium Enterprises Development (MSMED) Act 2006",
+    description: "Matters concerning Micro, Small and Medium Enterprises (MSME) under the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006, undertaken before Micro and Small Enterprise Facilitation Council (MSEFC).",
     keyPoints: [
-      "Delayed payment dispute resolution under Sections 15-24 of MSMED Act 2006",
-      "MSEFC (Micro and Small Enterprise Facilitation Council) proceedings",
+      "Delayed payment dispute resolution under Sections 15-24 of Micro, Small and Medium Enterprises Development (MSMED) Act 2006",
+      "Micro and Small Enterprises Facilitation Council (MSEFC) proceedings",
       "Statutory interest claims on delayed payments",
-      "Legal documentation and compliance under MSME regulations",
+      "Legal documentation and compliance under Micro, Small and Medium Enterprises (MSME) regulations",
       "Recovery proceedings for outstanding dues from buyers"
     ]
   };
@@ -55,7 +55,7 @@ const MSMEServices = () => {
       id: 'delayed-payment',
       title: "Delayed Payment Disputes",
       icon: <ClockIcon className="w-8 h-8" />,
-      description: "Legal proceedings for delayed payment claims under Sections 15–18 of the MSMED Act, 2006",
+      description: "Legal proceedings for delayed payment claims under Sections 15–18 of the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006",
       details: [
         "Claims for payments delayed beyond 45 days from acceptance of goods/services",
         "Interest calculation at three times the bank rate notified by RBI",
@@ -65,14 +65,14 @@ const MSMEServices = () => {
     },
     {
       id: 'msefc-proceedings',
-      title: "MSEFC Council Proceedings", 
+      title: "Micro and Small Enterprises Facilitation Council (MSEFC) Council Proceedings", 
       icon: <ScaleIcon className="w-8 h-8" />,
       description: "Proceedings before the Facilitation Council taken up within the timelines contemplated by the Act.",
       details: [
-        "Filing applications before MSEFC under Section 18 of MSMED Act",
+        "Filing applications before Micro and Small Enterprises Facilitation Council (MSEFC) under Section 18 of Micro, Small and Medium Enterprises Development (MSMED) Act",
         "Preparation and presentation of cases within 90-day statutory timeline",
         "Ensuring compliance with documentary requirements",
-        "Follow-up on MSEFC directions and implementation"
+        "Follow-up on Micro and Small Enterprises Facilitation Council (MSEFC) directions and implementation"
       ]
     },
     {
@@ -81,7 +81,7 @@ const MSMEServices = () => {
       icon: <BanknotesIcon className="w-8 h-8" />,
       description: "Legal proceedings for recovery of awarded amounts",
       details: [
-        "Execution of MSEFC awards under Section 17 of MSMED Act",
+        "Execution of Micro and Small Enterprises Facilitation Council (MSEFC) awards under Section 17 of Micro, Small and Medium Enterprises Development (MSMED) Act",
         "Recovery proceedings as per statutory provisions",
         "Enforcement of payment directions issued by authorities",
         "Legal action against non-compliant buyers"
@@ -89,12 +89,12 @@ const MSMEServices = () => {
     },
     {
       id: 'compliance',
-      title: "MSME Compliance & Documentation",
+      title: "Micro, Small and Medium Enterprises (MSME) Compliance & Documentation",
       icon: <DocumentCheckIcon className="w-8 h-8" />,
       details: [
         "Udyam Registration process and documentation",
         "Legal review of supplier agreements and contracts",
-        "Compliance with MSME classification requirements",
+        "Compliance with Micro, Small and Medium Enterprises (MSME) classification requirements",
       ]
     }
   ];
@@ -103,45 +103,45 @@ const MSMEServices = () => {
     {
       step: "01",
       title: "Initial Assessment",
-      description: "Review of delayed payment claim and supporting documentation under MSMED Act provisions"
+      description: "Review of delayed payment claim and supporting documentation under Micro, Small and Medium Enterprises Development (MSMED) Act provisions"
     },
     {
       step: "02", 
       title: "Application Filing",
-      description: "Preparation and filing of application before appropriate MSEFC authority"
+      description: "Preparation and filing of application before appropriate Micro and Small Enterprises Facilitation Council (MSEFC) authority"
     },
     {
       step: "03",
       title: "Proceedings",
-      description: "Representation during MSEFC proceedings and presentation of case"
+      description: "Representation during Micro and Small Enterprises Facilitation Council (MSEFC) proceedings and presentation of case"
     },
     {
       step: "04",
       title: "Award Implementation", 
-      description: "Follow-up on MSEFC directions and recovery proceedings if required"
+      description: "Follow-up on Micro and Small Enterprises Facilitation Council (MSEFC) directions and recovery proceedings if required"
     }
   ];
 
   const faqs = [
     {
-      question: "What is the time limit for payment to MSME suppliers under MSMED Act 2006?",
-      answer: "Under Section 15 of MSMED Act 2006, buyers are required to make payment within 45 days of acceptance of goods or services supplied by MSME units. Failure to pay within this period attracts interest liability."
+      question: "What is the time limit for payment to Micro, Small and Medium Enterprises (MSME) suppliers under Micro, Small and Medium Enterprises Development (MSMED) Act 2006?",
+      answer: "Under Section 15 of Micro, Small and Medium Enterprises Development (MSMED) Act 2006, buyers are required to make payment within 45 days of acceptance of goods or services supplied by Micro, Small and Medium Enterprises (MSME) units. Failure to pay within this period attracts interest liability."
     },
     {
       question: "What interest rate applies on delayed payments to MSMEs?",
-      answer: "Section 16 of MSMED Act 2006 provides that delayed payments attract compound interest at three times the bank rate notified by Reserve Bank of India, calculated with monthly rests from the due date."
+      answer: "Section 16 of Micro, Small and Medium Enterprises Development (MSMED) Act 2006 provides that delayed payments attract compound interest at three times the bank rate notified by Reserve Bank of India, calculated with monthly rests from the due date."
     },
     {
       question: "How can MSMEs file complaints for delayed payments?",
-      answer: "MSME units can file applications before the Micro and Small Enterprise Facilitation Council (MSEFC) under Section 18 of MSMED Act 2006 for recovery of delayed payments along with interest."
+      answer: "Micro, Small and Medium Enterprises (MSME) units can file applications before the Micro and Small Enterprise Facilitation Council (MSEFC) under Section 18 of Micro, Small and Medium Enterprises Development (MSMED) Act 2006 for recovery of delayed payments along with interest."
     },
     {
-      question: "What is the time limit for MSEFC to decide delayed payment cases?",
-      answer: "Under MSMED Act 2006, every reference made to MSEFC shall be decided within 90 days from the date of filing the application, ensuring speedy resolution of disputes."
+      question: "What is the time limit for Micro and Small Enterprises Facilitation Council (MSEFC) to decide delayed payment cases?",
+      answer: "Under Micro, Small and Medium Enterprises Development (MSMED) Act 2006, every reference made to Micro and Small Enterprises Facilitation Council (MSEFC) shall be decided within 90 days from the date of filing the application, ensuring speedy resolution of disputes."
     },
     {
-      question: "Can courts entertain appeals against MSEFC awards?",
-      answer: "Under Section 19 of MSMED Act 2006, no court can entertain an application for setting aside MSEFC awards unless the appellant deposits 75% of the awarded amount, ensuring protection for MSME suppliers."
+      question: "Can courts entertain appeals against Micro and Small Enterprises Facilitation Council (MSEFC) awards?",
+      answer: "Under Section 19 of Micro, Small and Medium Enterprises Development (MSMED) Act 2006, no court can entertain an application for setting aside Micro and Small Enterprises Facilitation Council (MSEFC) awards unless the appellant deposits 75% of the awarded amount, ensuring protection for Micro, Small and Medium Enterprises (MSME) suppliers."
     }
   ];
 
@@ -149,7 +149,7 @@ const MSMEServices = () => {
     overview: (
       <div className="space-y-8">
         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">MSME Legal Services Overview</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Micro, Small and Medium Enterprises (MSME) Cases Overview</h3>
           <p className="text-gray-700 text-lg leading-relaxed mb-6">
             {msmeOverview.description}
           </p>
@@ -168,7 +168,7 @@ const MSMEServices = () => {
             <div className="relative bg-gradient-to-br from-white/90 to-indigo-50/90 backdrop-blur-sm p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-indigo-200/50">
             <h4 className="text-xl sm:text-2xl font-bold text-indigo-900 mb-4 sm:mb-6 flex items-center">
                 <span className="text-2xl sm:text-3xl mr-3">📜</span>
-                Key Provisions of MSMED Act 2006
+                Key Provisions of Micro, Small and Medium Enterprises Development (MSMED) Act 2006
             </h4>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -189,14 +189,14 @@ const MSMEServices = () => {
                 <div className="bg-white/60 rounded-xl p-4 border border-indigo-100">
                 <h5 className="font-bold text-indigo-800 mb-2 text-sm sm:text-base">Section 17 - Recovery Provisions</h5>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Award of MSEFC is enforceable and recoverable as a decree of civil court. Recovery certificate can be issued for execution of award.
+                    Award of Micro and Small Enterprises Facilitation Council (MSEFC) is enforceable and recoverable as a decree of civil court. Recovery certificate can be issued for execution of award.
                 </p>
                 </div>
 
                 <div className="bg-white/60 rounded-xl p-4 border border-indigo-100">
-                <h5 className="font-bold text-indigo-800 mb-2 text-sm sm:text-base">Section 18 - MSEFC Reference</h5>
+                <h5 className="font-bold text-indigo-800 mb-2 text-sm sm:text-base">Section 18 - Micro and Small Enterprises Facilitation Council (MSEFC) Reference</h5>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    Disputes may be referred to MSEFC for conciliation and arbitration. Council shall conduct proceedings as per prescribed procedures.
+                    Disputes may be referred to Micro and Small Enterprises Facilitation Council (MSEFC) for conciliation and arbitration. Council shall conduct proceedings as per prescribed procedures.
                 </p>
                 </div>
             </div>
@@ -229,7 +229,7 @@ const MSMEServices = () => {
     process: (
       <div className="space-y-8">
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">Legal Process for MSME Disputes</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">Legal Process for Micro, Small and Medium Enterprises (MSME) Disputes</h3>
         </div>
         
         <div className="relative">
@@ -255,7 +255,7 @@ const MSMEServices = () => {
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h3>
           <p className="text-xl text-gray-600">
-            Common questions about MSME legal matters under MSMED Act 2006
+            Common questions about Micro, Small and Medium Enterprises (MSME) legal matters under Micro, Small and Medium Enterprises Development (MSMED) Act 2006
           </p>
         </div>
         
@@ -288,9 +288,10 @@ const MSMEServices = () => {
   return (
     <>
       <Helmet>
-        <title>MSME Legal Services - Vipin Chand Garg, Advocate</title>
-        <meta name="description" content="Professional MSME legal services under MSMED Act 2006. Delayed payment disputes, MSEFC proceedings, and MSME compliance matters." />
-        <meta name="keywords" content="MSME lawyer, MSMED Act 2006, delayed payment disputes, MSEFC proceedings, Meerut advocate" />
+        <title>Micro, Small and Medium Enterprises (MSME) Cases- Vipin Chand Garg, Advocate</title>
+        <meta name="description" content="Micro, Small and Medium Enterprises (MSME) matters under the Micro, Small and Medium Enterprises (MSME) Development Act, 2006: delayed payment disputes, claims and references, Section 18 proceedings before the Facilitation Council (conciliation and arbitration), Micro, Small and Medium Enterprises (MSME) Samadhaan e‑filing; petitions related to Micro and Small Enterprises Facilitation Council (MSEFC) awards; appeals under Section 19; and Micro, Small and Medium Enterprises (MSME) compliance information." />
+
+        <meta name="keywords" content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, Micro, Small and Medium Enterprises (MSME) Dispute Resolution, MSME Delayed Payment References (MSMED Act, 2006), Micro and Small Enterprises Facilitation Council (MSEFC) Conciliation Proceedings, Micro and Small Enterprises Facilitation Council (MSEFC) Arbitration, MSME Samadhaan E‑Filing, Petitions Related to Micro and Small Enterprises Facilitation Council (MSEFC) Awards, Appeals Under Section 19 (MSMED Act), MSME delayed payment and disputes, Section 18 Proceedings, Micro and Small Enterprises Facilitation Council, Section 15 Buyer’s Liability, Section 16 Interest Payment, Section 17 Amount Due, Supplier–Buyer Disputes, Conciliation then Arbitration, Award Enforcement, Execution of Micro and Small Enterprises Facilitation Council (MSEFC) Award, Recovery Proceedings, Deposit under Section 19" />
       </Helmet>
       
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
@@ -305,10 +306,11 @@ const MSMEServices = () => {
                 <BriefcaseIcon className="w-8 h-8 text-blue-600" />
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"> MSME</span> Cases
+                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"> Micro, Small and Medium Enterprises</span> <br/>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"> MSME </span> Cases
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Proceedings under Section 18 of the Micro, Small and Medium Enterprises Development Act, 2006
+                Proceedings under Section 18 of the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006
               </p>
             </div>
           </div>
@@ -355,9 +357,9 @@ const MSMEServices = () => {
               <div>
                 <h4 className="font-semibold text-amber-800 mb-2">Professional Disclaimer</h4>
                 <p className="text-amber-700 text-sm leading-relaxed">
-                  This information is provided for general understanding of MSME legal matters under Indian law, as permitted under the Bar Council of India Rules. 
+                  This information is provided for general understanding of Micro, Small and Medium Enterprises (MSME) legal matters under Indian law, as permitted under the Bar Council of India Rules. 
                   It does not constitute legal advice and should not be relied upon as a substitute for consultation with a qualified legal professional. 
-                  Each MSME matter requires individual assessment based on specific facts and applicable statutory provisions.
+                  Each Micro, Small and Medium Enterprises (MSME) matter requires individual assessment based on specific facts and applicable statutory provisions.
                 </p>
               </div>
             </div>
