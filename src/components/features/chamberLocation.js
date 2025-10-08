@@ -96,7 +96,7 @@ export default function ChamberLocation(props) {
                       {/* Quick Actions */}
                       <div className="mt-4 flex flex-col sm:flex-row gap-2 sm:gap-3">
                         <a
-                          href="https://maps.app.goo.gl/CiF5RocJDxZv6TDk6"
+                          href="https://maps.app.goo.gl/Pr7c6hrUHr6a5MYg6"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex-1 inline-flex items-center justify-center px-3 sm:px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 transition-colors"
@@ -105,7 +105,7 @@ export default function ChamberLocation(props) {
                           Open in Google Maps
                         </a>
                         <a
-                          href="https://www.google.com/maps/dir//28.9892140,77.7159489/@28.9892140,77.7159489,17z"
+                          href="https://maps.app.goo.gl/Pr7c6hrUHr6a5MYg6"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex-1 inline-flex items-center justify-center px-3 sm:px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 border border-blue-200 rounded-md hover:bg-blue-100 transition-colors"
