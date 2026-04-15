@@ -65,46 +65,46 @@ const NotaryServicesSection = () => {
   const serviceData = {
     essential: {
       title: "Why Notary Services Are Essential",
-      icon: <ShieldCheckIcon className="h-8 w-8 text-purple-600" />,
+      icon: <ShieldCheckIcon className="h-7 w-7 text-navy-700" />,
       services: [
         {
-          icon: <DocumentCheckIcon className="h-6 w-6 text-green-600" />,
+          icon: <DocumentCheckIcon className="h-5 w-5 text-emerald-600" />,
           title: "Legal Validity",
           description: "Ensures acceptance in courts and official processes",
           details: "Notarized documents carry legal weight and are accepted by all judicial and administrative bodies across India."
         },
         {
-          icon: <ShieldCheckIcon className="h-6 w-6 text-blue-600" />,
+          icon: <ShieldCheckIcon className="h-5 w-5 text-navy-600" />,
           title: "Fraud Prevention",
           description: "Acts as impartial witnesses to prevent forgery and coercion",
           details: "Notaries act as impartial witnesses to ensure that signatories enter into agreements willingly and without coercion, while authentication by a certified notary significantly reduces document tampering and fraudulent activities."
         },
         {
-          icon: <BriefcaseIcon className="h-6 w-6 text-indigo-600" />,
+          icon: <BriefcaseIcon className="h-5 w-5 text-indigo-600" />,
           title: "Simplifying Complex Transactions",
           description: "Streamlines property transfers, business agreements, and affidavits",
           details: "Professional notarization ensures smooth processing of complex legal and business transactions."
         },
         {
-          icon: <BuildingOfficeIcon className="h-6 w-6 text-orange-600" />,
+          icon: <BuildingOfficeIcon className="h-5 w-5 text-orange-600" />,
           title: "Government Compliance",
           description: "Documents comply with all applicable laws, regulations, and formalities",
           details: "A Central Government appointed Notary ensures full compliance with Indian legal framework and regulatory acceptance at all levels across India."
         },
         {
-          icon: <CheckBadgeIcon className="h-6 w-6 text-emerald-600" />,
+          icon: <CheckBadgeIcon className="h-5 w-5 text-emerald-600" />,
           title: "Verify Authenticity",
           description: "Ensures documents are genuine and properly executed through thorough verification",
           details: "Notarisation ensure that your documents are genuine and properly executed through thorough verification by Central Government appointed Notary."
         },
         {
-          icon: <StarIcon className="h-6 w-6 text-amber-600" />,
+          icon: <StarIcon className="h-5 w-5 text-gold-500" />,
           title: "Provide Credibility",
           description: "Enhanced validity through impartial third-party verification",
           details: "Notarized documents are more credible and valid because they have been verified by an impartial third party - a certified Central Government Notary."
         },
         {
-          icon: <HandRaisedIcon className="h-6 w-6 text-pink-600" />,
+          icon: <HandRaisedIcon className="h-5 w-5 text-pink-600" />,
           title: "Protect Rights",
           description: "Safeguards rights and interests of individuals and organizations",
           details: "Notaries protect the rights and interests of individuals and organizations, ensuring legal security in complex transactions and important documentation."
@@ -113,28 +113,28 @@ const NotaryServicesSection = () => {
     },
     documents: {
       title: "Documents Required for Notary Services",
-      icon: <DocumentDuplicateIcon className="h-8 w-8 text-emerald-600" />,
+      icon: <DocumentDuplicateIcon className="h-7 w-7 text-emerald-600" />,
       services: [
         {
-          icon: <IdentificationIcon className="h-6 w-6 text-purple-600" />,
+          icon: <IdentificationIcon className="h-5 w-5 text-navy-600" />,
           title: "Valid ID Proof",
           description: "Aadhaar Card, Passport, or PAN Card",
           details: "Government-issued photo identification is mandatory for all notarial services to verify identity."
         },
         {
-          icon: <UserGroupIcon className="h-6 w-6 text-pink-500" />,
+          icon: <UserGroupIcon className="h-5 w-5 text-pink-500" />,
           title: "Photograph",
           description: "Passport size photograph",
           details: "A recent passport size photograph is required. This helps further verify identity and supports the completeness of the documentation process."
         },
         {
-          icon: <DocumentTextIcon className="h-6 w-6 text-blue-600" />,
+          icon: <DocumentTextIcon className="h-5 w-5 text-blue-600" />,
           title: "Original Documents",
           description: "Must be presented in their original form",
           details: "All documents requiring notarization must be presented in original form for authenticity verification."
         },
         {
-          icon: <ClipboardDocumentListIcon className="h-6 w-6 text-green-600" />,
+          icon: <ClipboardDocumentListIcon className="h-5 w-5 text-emerald-600" />,
           title: "Supporting Documents",
           description: "Any additional paperwork relevant to the notarization",
           details: "Additional supporting documents may be required based on the specific nature of notarization."
@@ -143,18 +143,18 @@ const NotaryServicesSection = () => {
     },
     affidavit: {
       title: "Comprehensive Affidavit Services",
-      icon: <DocumentCheckIcon className="h-8 w-8 text-blue-600" />,
+      icon: <DocumentCheckIcon className="h-7 w-7 text-blue-600" />,
       services: []
     },
     faq: {
       title: "Frequently Asked Questions",
-      icon: <QuestionMarkCircleIcon className="h-8 w-8 text-indigo-600" />,
+      icon: <QuestionMarkCircleIcon className="h-7 w-7 text-navy-700" />,
       services: []
     }
   };
 
   const affidavitServices = [
-    { category: "Name & Identity", icon: <UserIcon className="h-5 w-5" />, services: [
+    { category: "Name & Identity", icon: <UserIcon className="h-4 w-4" />, services: [
       "Affidavit for Name Change",
       "Affidavit Service for Change of Name in Gazette",
       "Affidavit Services for Change of Name After Marriage",
@@ -162,25 +162,25 @@ const NotaryServicesSection = () => {
       "Affidavit Services for One and the Same Person Proof",
       "Affidavit Services for Change of Name for Minor"
     ]},
-    { category: "Address & Residence", icon: <HomeIcon className="h-5 w-5" />, services: [
+    { category: "Address & Residence", icon: <HomeIcon className="h-4 w-4" />, services: [
       "Affidavit Services for Proof of Address",
       "Affidavit Services for Domicile Certificate"
     ]},
-    { category: "Personal Records", icon: <CalendarDaysIcon className="h-5 w-5" />, services: [
+    { category: "Personal Records", icon: <CalendarDaysIcon className="h-4 w-4" />, services: [
       "Affidavit Services for Proof of Date of Birth",
       "Affidavit Services for Declaration of Non Criminal Record",
       "Affidavit Services for First Born Child"
     ]},
-    { category: "Financial & Income", icon: <CreditCardIcon className="h-5 w-5" />, services: [
+    { category: "Financial & Income", icon: <CreditCardIcon className="h-4 w-4" />, services: [
       "Affidavit Services for Proof of Income",
       "Affidavit Services for Claim Settlement in the Bank",
       "Affidavit Services for PF cum Indemnity Bond"
     ]},
-    { category: "Marriage & Family", icon: <HeartIcon className="h-5 w-5" />, services: [
+    { category: "Marriage & Family", icon: <HeartIcon className="h-4 w-4" />, services: [
       "Affidavit Services for Joint Marriage Affidavit",
       "Affidavit Services for Marriage Registration"
     ]},
-    { category: "Education", icon: <AcademicCapIcon className="h-5 w-5" />, services: [
+    { category: "Education", icon: <AcademicCapIcon className="h-4 w-4" />, services: [
       "Affidavit Services for Education Loan",
       "Affidavit Services for Gap in Education",
       "Affidavit Services for Anti-ragging",
@@ -190,13 +190,13 @@ const NotaryServicesSection = () => {
       "Student No Objection Affidavit",
       "No Objection Affidavit for student studying in foreign Country",
     ]},
-    { category: "Utilities & Gas", icon: <FireIcon className="h-5 w-5" />, services: [
+    { category: "Utilities & Gas", icon: <FireIcon className="h-4 w-4" />, services: [
       "Affidavit Services for LPG Annexure A",
       "Affidavit Services for HP Gas",
       "Affidavit Services for Indane Gas",
       "Affidavit Services for Bharat Gas"
     ]},
-    { category: "Employment & Licensing", icon: <BriefcaseIcon className="h-5 w-5" />, services: [
+    { category: "Employment & Licensing", icon: <BriefcaseIcon className="h-4 w-4" />, services: [
       "Affidavit Services for Gap in Employment",
       "Affidavit Services for Duplicate License"
     ]}
@@ -211,13 +211,13 @@ const NotaryServicesSection = () => {
 
   return (
     
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <div className="min-h-screen bg-white">
         <Helmet>
             <meta
             name="description"
             content="Contact Vipin Chand Garg, Advocate & Notary in Meerut Court, for general professional inquiries related to legal and notarial services under Indian law."
             />
-            <meta name="keywords" content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, Micro, Small and Medium Enterprises (MSME) Dispute Resolution, Micro, Small and Medium Enterprises (MSME) Delayed Payment References (MSMED Act, 2006), Micro and Small Enterprises Facilitation Council (MSEFC) Conciliation Proceedings, Micro and Small Enterprises Facilitation Council (MSEFC) Arbitration, Micro, Small and Medium Enterprises (MSME) Samadhaan E‑Filing, Petitions Related to Micro and Small Enterprises Facilitation Council (MSEFC) Awards, Appeals Under Section 19 (MSMED Act), Micro, Small and Medium Enterprises (MSME) delayed payment and disputes, Section 18 Proceedings, Micro and Small Enterprises Facilitation Council, Section 15 Buyer’s Liability, Section 16 Interest Payment, Section 17 Amount Due, Supplier–Buyer Disputes, Conciliation then Arbitration, Award Enforcement, Execution of Micro and Small Enterprises Facilitation Council (MSEFC) Award, Recovery Proceedings, Deposit under Section 19" />
+            <meta name="keywords" content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, Micro, Small and Medium Enterprises (MSME) Dispute Resolution, Micro, Small and Medium Enterprises (MSME) Delayed Payment References (MSMED Act, 2006), Micro and Small Enterprises Facilitation Council (MSEFC) Conciliation Proceedings, Micro and Small Enterprises Facilitation Council (MSEFC) Arbitration, Micro, Small and Medium Enterprises (MSME) Samadhaan E‑Filing, Petitions Related to Micro and Small Enterprises Facilitation Council (MSEFC) Awards, Appeals Under Section 19 (MSMED Act), Micro, Small and Medium Enterprises (MSME) delayed payment and disputes, Section 18 Proceedings, Micro and Small Enterprises Facilitation Council, Section 15 Buyer's Liability, Section 16 Interest Payment, Section 17 Amount Due, Supplier–Buyer Disputes, Conciliation then Arbitration, Award Enforcement, Execution of Micro and Small Enterprises Facilitation Council (MSEFC) Award, Recovery Proceedings, Deposit under Section 19" />
             <link rel="canonical" href="https://yourdomain.com/contact" />
         </Helmet>
         <Navbar />
@@ -225,101 +225,113 @@ const NotaryServicesSection = () => {
     
         <section 
           id="services-section" 
-          className={`py-8 lg:py-8 bg-white relative overflow-hidden transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          className={`py-8 lg:py-10 relative overflow-hidden transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          {/* Background Elements */}
-          <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-100/40 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-100/40 to-transparent rounded-full blur-3xl"></div>
+          {/* Background */}
+          <div className="absolute top-20 right-20 w-80 h-80 bg-navy-100/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-60 h-60 bg-gold-100/8 rounded-full blur-3xl"></div>
 
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Section Header */}
-            <div className="text-center mb-12 lg:mb-16">
-              <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-purple-600/10 to-blue-600/10 border border-purple-200/50 mb-6">
-                <DocumentCheckIcon className="h-6 w-6 text-purple-600 mr-2" />
-                <span className="text-sm font-semibold text-gray-700">Comprehensive Notary Services</span>
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-navy-50 border border-navy-200/40 mb-5">
+                <DocumentCheckIcon className="h-4 w-4 text-navy-700 mr-2" />
+                <span className="text-xs sm:text-sm font-semibold text-navy-700">Comprehensive Notary Services</span>
               </div>
               
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 via-purple-800 to-blue-800 bg-clip-text text-transparent mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-900 mb-3 tracking-tight">
                 Professional Notary
                 <br className="sm:hidden" />
-                <span className="text-purple-600"> & Affidavit Services</span>
+                <span className="text-navy-700"> & Affidavit Services</span>
               </h2>
               
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base text-gray-500 max-w-3xl mx-auto leading-relaxed">
                 Experience comprehensive notarial services backed by Central Government authority, 
                 ensuring legal validity and acceptance across India and internationally.
               </p>
-              <br/>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <div className="flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg">
-                <DocumentCheckIcon className="h-5 w-5 text-purple-600 mr-2" />
-                <span className="text-sm font-medium text-gray-700">Legal Validity</span>
-              </div>
-              <div className="flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg">
-                <ShieldCheckIcon className="h-5 w-5 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-gray-700">Fraud Prevention</span>
-              </div>
-              <div className="flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg">
-                <GlobeAltIcon className="h-5 w-5 text-emerald-600 mr-2" />
-                <span className="text-sm font-medium text-gray-700">Pan-India Validity</span>
-              </div>
-              <div className="flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-lg">
-                <GlobeAsiaAustraliaIcon className="h-5 w-5 text-emerald-600 mr-2" />
-                <span className="text-sm font-medium text-gray-700">International Validity</span>
-              </div>
-            </div>
-
-
-
-
-            </div>
-
-            {/* Tab Navigation */}
-            <div className="flex flex-wrap justify-center mb-8 lg:mb-12">
-              <div className="flex bg-white/80 backdrop-blur-sm rounded-2xl p-2 border border-gray-200/60 shadow-lg shadow-purple-500/10 overflow-x-auto no-scrollbar">
-                {Object.entries(serviceData).map(([key, data]) => (
-                  <button
-                    key={key}
-                    onClick={() => setActiveServiceTab(key)}
-                    className={`px-4 sm:px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 whitespace-nowrap ${
-                      activeServiceTab === key
-                        ? 'bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg shadow-purple-500/25'
-                        : 'text-gray-600 hover:text-purple-600 hover:bg-purple-50'
-                    }`}
-                  >
-                    {data.title}
-                  </button>
+              {/* Feature pills */}
+              <div className="flex flex-wrap justify-center gap-2.5 mt-6">
+                {[
+                  { icon: <DocumentCheckIcon className="h-4 w-4 text-navy-600" />, text: 'Legal Validity' },
+                  { icon: <ShieldCheckIcon className="h-4 w-4 text-navy-600" />, text: 'Fraud Prevention' },
+                  { icon: <GlobeAltIcon className="h-4 w-4 text-emerald-600" />, text: 'Pan-India Validity' },
+                  { icon: <GlobeAsiaAustraliaIcon className="h-4 w-4 text-emerald-600" />, text: 'International Validity' },
+                ].map((pill, idx) => (
+                  <div key={idx} className="flex items-center px-3.5 py-1.5 bg-gray-50 rounded-full border border-gray-100">
+                    {pill.icon}
+                    <span className="text-xs font-medium text-gray-600 ml-1.5">{pill.text}</span>
+                  </div>
                 ))}
               </div>
             </div>
 
-            {/* Service Content */}
-            {activeServiceTab === 'essential' && (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 cursor-pointer">
-                {serviceData.essential.services.map((service, index) => (
-                  <div key={index} className="group relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
-                    <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl border border-purple-200/50 p-6 shadow-lg shadow-purple-500/10 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-500 hover:-translate-y-2">
-                      
-                      <div className="flex items-center space-x-4 mb-4">
-                        <div className="p-3 bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200">
-                          {service.icon}
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-lg font-bold text-gray-900 mb-1">
-                            {service.title}
-                          </h3>
-                          <p className="text-sm text-gray-600">
-                            {service.description}
-                          </p>
-                        </div>
-                      </div>
+            {/* Tab Navigation */}
+            <div className="mb-8">
+              <div className="bg-gray-50 rounded-xl p-1.5 border border-gray-100 max-w-fit mx-auto">
+                <div className="flex flex-wrap gap-1 overflow-x-auto no-scrollbar">
+                  {Object.entries(serviceData).map(([key, data]) => (
+                    <button
+                      key={key}
+                      onClick={() => setActiveServiceTab(key)}
+                      className={`px-3.5 sm:px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-300 whitespace-nowrap ${
+                        activeServiceTab === key
+                          ? 'bg-navy-700 text-white shadow-sm'
+                          : 'text-gray-500 hover:text-navy-700 hover:bg-white'
+                      }`}
+                    >
+                      {data.title}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
 
-                      <p className="text-sm text-gray-700 leading-relaxed">
-                        {service.details}
+            {/* Essential Tab */}
+            {activeServiceTab === 'essential' && (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 cursor-pointer animate-fadeIn">
+                {serviceData.essential.services.map((service, index) => (
+                  <div key={index} className="bg-white rounded-xl border border-gray-100 p-5 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-0.5">
+                    <div className="flex items-center space-x-3 mb-3">
+                      <div className="p-2.5 bg-gray-50 rounded-lg border border-gray-100">
+                        {service.icon}
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-sm sm:text-base font-bold text-navy-900">
+                          {service.title}
+                        </h3>
+                        <p className="text-xs text-gray-500">
+                          {service.description}
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                      {service.details}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Documents Tab */}
+            {activeServiceTab === 'documents' && (
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 cursor-pointer animate-fadeIn">
+                {serviceData.documents.services.map((document, index) => (
+                  <div key={index} className="bg-white rounded-xl border border-gray-100 p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-0.5 text-center">
+                    <div className="w-12 h-12 mx-auto bg-navy-50 rounded-xl flex items-center justify-center mb-3">
+                      {document.icon}
+                    </div>
+                    <h3 className="text-base font-bold text-navy-900 mb-1.5">
+                      {document.title}
+                    </h3>
+                    <p className="text-gold-600 font-medium text-sm mb-3">
+                      {document.description}
+                    </p>
+                    <div className="bg-gray-50 rounded-lg p-3 border border-gray-100">
+                      <p className="text-xs text-gray-600">
+                        {document.details}
                       </p>
                     </div>
                   </div>
@@ -327,81 +339,48 @@ const NotaryServicesSection = () => {
               </div>
             )}
 
-            {activeServiceTab === 'documents' && (
-              <div className="grid md:grid-cols-3 gap-8 mb-12 cursor-pointer">
-                {serviceData.documents.services.map((document, index) => (
-                  <div key={index} className="group relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-blue-500/10 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
-                    <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl border border-emerald-200/50 p-8 shadow-lg shadow-emerald-500/10 hover:shadow-xl hover:shadow-emerald-500/20 transition-all duration-500 hover:-translate-y-2">
-                      
-                      <div className="text-center mb-6">
-                        <div className="w-16 h-16 mx-auto bg-gradient-to-br from-emerald-100 to-blue-100 rounded-2xl flex items-center justify-center mb-4">
-                          {document.icon}
-                        </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">
-                          {document.title}
-                        </h3>
-                        <p className="text-emerald-600 font-medium">
-                          {document.description}
-                        </p>
-                      </div>
-
-                      <div className="bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl p-4 border border-emerald-200/50">
-                        <p className="text-sm text-gray-700 text-center">
-                          {document.details}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
+            {/* Affidavit Tab */}
             {activeServiceTab === 'affidavit' && (
-              <div className="space-y-8 cursor-pointer">
+              <div className="space-y-6 cursor-pointer animate-fadeIn">
                 {/* Search Bar */}
-                <div className="max-w-2xl mx-auto mb-12">
+                <div className="max-w-2xl mx-auto mb-8">
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                      <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
+                      <MagnifyingGlassIcon className="h-4 w-4 text-gray-400" />
                     </div>
                     <input
                       type="text"
                       placeholder="Search affidavit services..."
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
-                      className="w-full pl-12 pr-4 py-4 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg shadow-blue-500/10 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
+                      className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-xl shadow-card focus:outline-none focus:border-navy-500 focus:ring-2 focus:ring-navy-500/20 transition-all duration-300 text-sm"
                     />
                   </div>
                 </div>
 
                 {/* Affidavit Categories */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 cursor-pointer">
                   {(searchTerm ? filteredAffidavitServices : affidavitServices).map((category, index) => (
-                    <div key={index} className="group relative">
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
-                      <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl border border-blue-200/50 p-6 shadow-lg shadow-blue-500/10 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-500">
-                        
-                        <div className="flex items-center space-x-3 mb-6">
-                          <div className="p-2 bg-blue-100 rounded-xl">
-                            {category.icon}
-                          </div>
-                          <h3 className="text-lg font-bold text-gray-900">
-                            {category.category}
-                          </h3>
-                          <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
-                            {category.services.length}
-                          </span>
+                    <div key={index} className="bg-white rounded-xl border border-gray-100 p-5 shadow-card hover:shadow-card-hover transition-all duration-300">
+                      <div className="flex items-center space-x-3 mb-4">
+                        <div className="p-2 bg-navy-50 rounded-lg">
+                          {category.icon}
                         </div>
+                        <h3 className="text-sm sm:text-base font-bold text-navy-900">
+                          {category.category}
+                        </h3>
+                        <span className="px-2 py-0.5 bg-navy-50 text-navy-700 text-xs font-bold rounded-full">
+                          {category.services.length}
+                        </span>
+                      </div>
 
-                        <div className="space-y-2">
-                          {category.services.map((service, serviceIndex) => (
-                            <div key={serviceIndex} className="flex items-start space-x-2 p-2 rounded-lg hover:bg-blue-50 transition-colors duration-200">
-                              <CheckCircleIcon className="h-4 w-4 text-blue-500 flex-shrink-0 mt-0.5" />
-                              <span className="text-sm text-gray-700">{service}</span>
-                            </div>
-                          ))}
-                        </div>
+                      <div className="space-y-1.5">
+                        {category.services.map((service, serviceIndex) => (
+                          <div key={serviceIndex} className="flex items-start space-x-2 p-1.5 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                            <CheckCircleIcon className="h-3.5 w-3.5 text-gold-500 flex-shrink-0 mt-0.5" />
+                            <span className="text-xs sm:text-sm text-gray-600">{service}</span>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   ))}
@@ -409,16 +388,17 @@ const NotaryServicesSection = () => {
 
                 {searchTerm && filteredAffidavitServices.length === 0 && (
                   <div className="text-center py-12">
-                    <div className="w-24 h-24 mx-auto bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                      <MagnifyingGlassIcon className="h-12 w-12 text-gray-400" />
+                    <div className="w-16 h-16 mx-auto bg-gray-50 rounded-full flex items-center justify-center mb-3">
+                      <MagnifyingGlassIcon className="h-8 w-8 text-gray-300" />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">No services found</h3>
-                    <p className="text-gray-600">Try adjusting your search terms</p>
+                    <h3 className="text-lg font-bold text-navy-900 mb-1">No services found</h3>
+                    <p className="text-gray-400 text-sm">Try adjusting your search terms</p>
                   </div>
                 )}
               </div>
             )}
 
+            {/* FAQ Tab */}
             {activeServiceTab === 'faq' && (
               <NotaryFAQSection />
             )}
@@ -473,66 +453,57 @@ const NotaryFAQSection = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <div className="space-y-6">
+    <div className="max-w-4xl mx-auto animate-fadeIn">
+      <div className="space-y-3">
         {faqData.map((faq, index) => (
-          <div key={index} className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
-            <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl border border-indigo-200/50 shadow-lg shadow-indigo-500/10 hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-500">
+          <div key={index} className="bg-white rounded-xl border border-gray-100 shadow-card overflow-hidden">
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full flex items-center justify-between p-5 sm:p-6 text-left focus:outline-none focus:ring-2 focus:ring-navy-500/20 focus:ring-offset-1 rounded-xl"
+            >
+              <div className="flex items-start space-x-3 flex-1">
+                <div className="p-1.5 bg-navy-50 rounded-lg flex-shrink-0">
+                  <QuestionMarkCircleIcon className="h-4 w-4 text-navy-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-sm sm:text-base font-bold text-navy-900 mb-0.5">
+                    {faq.question}
+                  </h3>
+                  {expandedFAQ !== index && (
+                    <p className="text-xs text-gray-400 line-clamp-2">
+                      {faq.answer.substring(0, 100)}...
+                    </p>
+                  )}
+                </div>
+              </div>
               
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-6 sm:p-8 text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 rounded-3xl"
-              >
-                <div className="flex items-start space-x-4 flex-1">
-                  <div className="p-2 bg-indigo-100 rounded-xl flex-shrink-0">
-                    <QuestionMarkCircleIcon className="h-6 w-6 text-indigo-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">
-                      {faq.question}
-                    </h3>
-                    {expandedFAQ !== index && (
-                      <p className="text-sm text-gray-600 line-clamp-2">
-                        {faq.answer.substring(0, 100)}...
-                      </p>
-                    )}
-                  </div>
+              <div className="flex-shrink-0 ml-3">
+                <div className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 ${
+                  expandedFAQ === index ? 'bg-navy-700 text-white' : 'bg-navy-50 text-navy-600'
+                }`}>
+                  {expandedFAQ === index ? (
+                    <MinusIcon className="h-4 w-4" />
+                  ) : (
+                    <PlusIcon className="h-4 w-4" />
+                  )}
                 </div>
-                
-                <div className="flex-shrink-0 ml-4">
-                  <div className={`w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center transition-all duration-300 ${
-                    expandedFAQ === index ? 'bg-indigo-600 text-white rotate-180' : 'text-indigo-600'
-                  }`}>
-                    {expandedFAQ === index ? (
-                      <MinusIcon className="h-5 w-5" />
-                    ) : (
-                      <PlusIcon className="h-5 w-5" />
-                    )}
-                  </div>
-                </div>
-              </button>
+              </div>
+            </button>
 
-              <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                expandedFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-              }`}>
-                <div className="px-6 sm:px-8 pb-6 sm:pb-8">
-                  <div className="ml-14 pl-4 border-l-2 border-indigo-200">
-                    <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-4 sm:p-6 border border-indigo-200/50">
-                      <p className="text-gray-700 leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    </div>
+            {expandedFAQ === index && (
+              <div className="px-5 sm:px-6 pb-5 sm:pb-6 animate-fadeIn">
+                <div className="ml-9 pl-3 border-l-2 border-navy-200">
+                  <div className="bg-navy-50/50 rounded-lg p-4 border border-navy-100">
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {faq.answer}
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         ))}
       </div>
-
-      {/* Contact CTA */}
-
     </div>
   );
 };
@@ -546,30 +517,28 @@ export default function NotaryPage() {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br from-slate-50 via-white to-purple-50/30 transition-all duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`min-h-screen bg-white transition-all duration-700 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
       <Helmet>
         <title>Notary - Vipin Chand Garg | Central Government Appointed Notary</title>
         <meta 
           name="description" 
           content="Professional notary services by Central Government appointed Advocate Vipin Chand Garg. Comprehensive affidavit services, document authentication, and legal validity across India." 
         />
-        <meta name="keywords" content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, Micro, Small and Medium Enterprises (MSME) Dispute Resolution, Micro, Small and Medium Enterprises (MSME) Delayed Payment References (MSMED Act, 2006), Micro and Small Enterprises Facilitation Council (MSEFC) Conciliation Proceedings, Micro and Small Enterprises Facilitation Council (MSEFC) Arbitration, Micro, Small and Medium Enterprises (MSME) Samadhaan E‑Filing, Petitions Related to Micro and Small Enterprises Facilitation Council (MSEFC) Awards, Appeals Under Section 19 (MSMED Act), Micro, Small and Medium Enterprises (MSME) delayed payment and disputes, Section 18 Proceedings, Micro and Small Enterprises Facilitation Council, Section 15 Buyer’s Liability, Section 16 Interest Payment, Section 17 Amount Due, Supplier–Buyer Disputes, Conciliation then Arbitration, Award Enforcement, Execution of Micro and Small Enterprises Facilitation Council (MSEFC) Award, Recovery Proceedings, Deposit under Section 19" />
+        <meta name="keywords" content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, Micro, Small and Medium Enterprises (MSME) Dispute Resolution, Micro, Small and Medium Enterprises (MSME) Delayed Payment References (MSMED Act, 2006), Micro and Small Enterprises Facilitation Council (MSEFC) Conciliation Proceedings, Micro and Small Enterprises Facilitation Council (MSEFC) Arbitration, Micro, Small and Medium Enterprises (MSME) Samadhaan E‑Filing, Petitions Related to Micro and Small Enterprises Facilitation Council (MSEFC) Awards, Appeals Under Section 19 (MSMED Act), Micro, Small and Medium Enterprises (MSME) delayed payment and disputes, Section 18 Proceedings, Micro and Small Enterprises Facilitation Council, Section 15 Buyer's Liability, Section 16 Interest Payment, Section 17 Amount Due, Supplier–Buyer Disputes, Conciliation then Arbitration, Award Enforcement, Execution of Micro and Small Enterprises Facilitation Council (MSEFC) Award, Recovery Proceedings, Deposit under Section 19" />
       </Helmet>
     
       
       <main >
-        {/* Hero Section */}
-
         {/* Notary Services Section */}
         <NotaryServicesSection />
 
         {/* Legal Disclaimer */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="bg-amber-50 border border-amber-200/60 rounded-xl p-5">
             <div className="flex items-start space-x-3">
-              <ExclamationTriangleIcon className="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" />
+              <ExclamationTriangleIcon className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-amber-800 mb-2">Professional Disclaimer</h4>
+                <h4 className="font-semibold text-amber-800 mb-1 text-sm">Professional Disclaimer</h4>
                 <p className="text-amber-700 text-sm leading-relaxed">
                   This website is intended to provide general professional information as permitted under the Bar Council of India Rules. 
                   It does not serve as a platform for solicitation or advertisement. All information is provided for educational purposes 
