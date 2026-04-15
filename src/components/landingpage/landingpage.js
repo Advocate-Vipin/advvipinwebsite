@@ -26,13 +26,14 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
-        <title>Vipin Chand Garg – Advocate & Notary Public in Meerut | Legal & Notary Services</title>
-        <meta
-          name="description"
-          content="Vipin Chand Garg is an Advocate and Notary (Government of India) practicing in Meerut Court, Uttar Pradesh. Offers legal advice and notarial services as per Indian law."
-        />
-        <meta name="keywords" content="Legal Services Meerut, Notarial Services, Affidavits, Rent Agreements, Criminal Law, Document Attestation, Advocate Meerut, Notary Public Meerut, Legal Documentation, Affidavits, Notary India, Legal Drafting, Rent Agreement, Will Notarization, Meerut Court Lawyer, Notary Services Meerut, Affidavit Preparation, Rent Agreement Drafting, Power of Attorney, Will Drafting, Sale Deed Documentation, Legal Notice Drafting, Document Attestation, True Copy Certification, Notarial Services, Criminal Law Consultation, Civil Law Matters, Property Disputes Documentation, Legal Document Drafting, Declaration and Undertaking, NRI Document Notarization, FIR & Bail Matters, Criminal Trials, Anticipatory Bail, Cheque Bounce Cases (Sec 138 NI Act), Quashing of FIR, Appeals & Revisions, Legal Opinion & Advisory, Title Verification & Clearance, Sale Deed Preparation & Review, Property Registration, Gift Deed & Will Drafting, Property Cases, Marriage Registration, Mutual Consent Divorce, Contested Divorce, Declaration Letters, Academic Undertakings, Certified Copies, Academic Documents, Other Attestation and Notarisation, Payment Delay Disputes, Matrimonial Cases, Micro, Small and Medium Enterprises (MSME) Dispute Resolution, Micro, Small and Medium Enterprises (MSME) Delayed Payment References (MSMED Act, 2006), Micro and Small Enterprises Facilitation Council (MSEFC) Conciliation Proceedings, Micro and Small Enterprises Facilitation Council (MSEFC) Arbitration, Micro, Small and Medium Enterprises (MSME) Samadhaan E‑Filing, Petitions Related to Micro and Small Enterprises Facilitation Council (MSEFC) Awards, Appeals Under Section 19 (MSMED Act), Micro, Small and Medium Enterprises (MSME) delayed payment and disputes, Section 18 Proceedings, Micro and Small Enterprises Facilitation Council, Section 15 Buyer's Liability, Section 16 Interest Payment, Section 17 Amount Due, Supplier–Buyer Disputes, Conciliation then Arbitration, Award Enforcement, Execution of Micro and Small Enterprises Facilitation Council (MSEFC) Award, Recovery Proceedings, Deposit under Section 19" />
+        <title>Vipin Chand Garg – Advocate & Notary (Govt. of India) | Meerut Court, UP</title>
+        <meta name="description" content="Advocate Vipin Chand Garg – 25+ years practicing in Meerut Court, UP. Central Government Notary. Criminal law, MSME cases, affidavits, rent agreements, property & family law." />
         <link rel="canonical" href="https://advocatevipinchandgarg.netlify.app/" />
+        <meta property="og:title" content="Vipin Chand Garg – Advocate & Notary (Govt. of India) | Meerut Court" />
+        <meta property="og:description" content="25+ years of legal practice in Meerut Court. Criminal law, MSME disputes, notarial services, property & family law. Central Government appointed Notary." />
+        <meta property="og:url" content="https://advocatevipinchandgarg.netlify.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://advocatevipinchandgarg.netlify.app/notaryLogo.jpg" />
       </Helmet>
 
       {/* Disclaimer Dialog */}

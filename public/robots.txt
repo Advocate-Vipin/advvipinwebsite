@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /static/
 
 Sitemap: https://advocatevipinchandgarg.netlify.app/sitemap.xml
