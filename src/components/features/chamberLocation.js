@@ -6,8 +6,8 @@ export default function ChamberLocation(props) {
   // Your chamber's real address Google EMBED code (centered, with marker)
   // If you want a different marker or closer zoom, adjust zoom/coords
   const embedSrc =
-    "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d208.7487212277923!2d77.71594888702856!3d28.989213973585976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1751390905988!5m2!1sen!2sin";
-  const mapsAppLink = "https://maps.app.goo.gl/Pr7c6hrUHr6a5MYg6";
+    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3489.9522716733413!2d77.7171071!3d28.9887853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c650c213c4171%3A0x444df20ab8ee34aa!2sAdvocate%20Vipin%20Chand%20Garg%20-%20Notary%20(Govt%20of%20india)!5e0!3m2!1sen!2sin!4v1776243655818!5m2!1sen!2sin";
+  const mapsAppLink = "https://maps.app.goo.gl/i3e1htsVwH12NFkW9";
 
   return (
     <Dialog open={mapOpen} onClose={setMapOpen} className="relative z-50">
@@ -73,7 +73,7 @@ export default function ChamberLocation(props) {
                       Open in Google Maps
                     </a>
                     <a
-                      href={"https://www.google.com/maps/dir/?api=1&destination=28.9863,77.7109"}
+                      href={mapsAppLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-blue-600 bg-blue-50 border border-blue-200 rounded-md hover:bg-blue-100 transition"
