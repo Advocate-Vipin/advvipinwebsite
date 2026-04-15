@@ -40,10 +40,10 @@ export default function ChamberLocation(props) {
                   </div>
                   <div className="mb-4 p-3 bg-gray-50 rounded-lg border-l-4 border-blue-400">
                     <p className="text-sm font-medium text-gray-900 mb-1">
-                      Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber
+                      Chamber No. 79, Advocate Vipin Chand Garg
                     </p>
                     <p className="text-xs sm:text-sm text-gray-600">
-                      Beside Shiv Mandir, Opposite Election Office, Meerut Court, Uttar Pradesh — 250001, India
+                      Opposite Jila Panchayat Office, Collectorate Compound, Meerut Court, Meerut, Uttar Pradesh- 250001
                     </p>
                   </div>
                   {/* LIVE MAP PREVIEW */}

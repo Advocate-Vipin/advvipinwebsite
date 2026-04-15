@@ -67,7 +67,7 @@ export default function ContactUs() {
                   Chamber Address
                 </h2>
                 <p className="mt-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 font-semibold leading-relaxed">
-                  Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, beside Shiv Mandir, Opposite Election Office, Meerut Court, Distt- Meerut, Uttar Pradesh – 250001
+                  Chamber No. 79, Advocate Vipin Chand Garg, Opposite Jila Panchayat Office, Collectorate Compound, Meerut Court, Meerut, Uttar Pradesh- 250001
                 </p>
               </div>
             </div>

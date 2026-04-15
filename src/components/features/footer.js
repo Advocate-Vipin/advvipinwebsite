@@ -190,8 +190,7 @@ export default function Footer() {
                                     <div>
                                         <p className="text-white font-semibold mb-1">Chamber Address</p>
                                         <span className="text-gray-300 text-sm leading-relaxed group-hover/address:text-white transition-colors duration-300">
-                                            Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, Beside Shiv Mandir, 
-                                            Opposite Election Office, Meerut Court, Distt- Meerut, Uttar Pradesh – 250001
+                                            Chamber No. 79, Advocate Vipin Chand Garg, Opposite Jila Panchayat Office, Collectorate Compound, Meerut Court, Meerut, Uttar Pradesh- 250001
                                         </span>
                                     </div>
                                 </div>

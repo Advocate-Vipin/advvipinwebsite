@@ -170,7 +170,7 @@ export default function LandingPage() {
                       <div className="flex items-start gap-3">
                         <MapIcon className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
                         <strong className="font-semibold text-gray-900 text-base leading-relaxed">
-                          Freedom Fighter Ratan Lal Garg Advocate Memorial Chamber, Beside Shiv Mandir, Opposite Election Office, Meerut Court, Uttar Pradesh— 250001, India.
+                          Chamber No. 79, Advocate Vipin Chand Garg, Opposite Jila Panchayat Office, Collectorate Compound, Meerut Court, Meerut, Uttar Pradesh- 250001.
                         </strong>
                       </div>
                     </div>
